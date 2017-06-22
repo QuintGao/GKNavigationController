@@ -7,11 +7,10 @@
 //
 
 #import "GKDemo007ViewController.h"
-#import "GKDemoScrollView.h"
 
 @interface GKDemo007ViewController () <UIScrollViewDelegate>
 
-@property (nonatomic, strong) GKDemoScrollView *scrollView;
+@property (nonatomic, strong) UIScrollView *scrollView;
 
 @property (nonatomic, strong) NSArray *images;
 
@@ -45,7 +44,7 @@
 - (void)setupUI {
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    self.scrollView = [[GKDemoScrollView alloc] initWithFrame:self.view.bounds];
+    self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
     self.scrollView.delegate        = self;
     self.scrollView.pagingEnabled   = YES;
     self.scrollView.backgroundColor = [UIColor redColor];

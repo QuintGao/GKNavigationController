@@ -25,7 +25,6 @@
 		7926479B1EFBFDB6001C12DA /* GKDemo005ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926478B1EFBFDB6001C12DA /* GKDemo005ViewController.m */; };
 		7926479C1EFBFDB6001C12DA /* GKDemo006ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926478D1EFBFDB6001C12DA /* GKDemo006ViewController.m */; };
 		7926479D1EFBFDB6001C12DA /* GKDemo007ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926478F1EFBFDB6001C12DA /* GKDemo007ViewController.m */; };
-		7926479E1EFBFDB6001C12DA /* GKDemoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647911EFBFDB6001C12DA /* GKDemoScrollView.m */; };
 		7926479F1EFBFDB6001C12DA /* GKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647931EFBFDB6001C12DA /* GKMainViewController.m */; };
 		792647A41EFBFDFA001C12DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647A31EFBFDFA001C12DA /* AppDelegate.m */; };
 		792647A71EFBFEB3001C12DA /* UIScrollView+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647A61EFBFEB3001C12DA /* UIScrollView+GKCategory.m */; };
@@ -84,8 +83,6 @@
 		7926478D1EFBFDB6001C12DA /* GKDemo006ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo006ViewController.m; sourceTree = "<group>"; };
 		7926478E1EFBFDB6001C12DA /* GKDemo007ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo007ViewController.h; sourceTree = "<group>"; };
 		7926478F1EFBFDB6001C12DA /* GKDemo007ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo007ViewController.m; sourceTree = "<group>"; };
-		792647901EFBFDB6001C12DA /* GKDemoScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemoScrollView.h; sourceTree = "<group>"; };
-		792647911EFBFDB6001C12DA /* GKDemoScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemoScrollView.m; sourceTree = "<group>"; };
 		792647921EFBFDB6001C12DA /* GKMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKMainViewController.h; sourceTree = "<group>"; };
 		792647931EFBFDB6001C12DA /* GKMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKMainViewController.m; sourceTree = "<group>"; };
 		792647A21EFBFDFA001C12DA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -242,8 +239,6 @@
 				7926478D1EFBFDB6001C12DA /* GKDemo006ViewController.m */,
 				7926478E1EFBFDB6001C12DA /* GKDemo007ViewController.h */,
 				7926478F1EFBFDB6001C12DA /* GKDemo007ViewController.m */,
-				792647901EFBFDB6001C12DA /* GKDemoScrollView.h */,
-				792647911EFBFDB6001C12DA /* GKDemoScrollView.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -405,7 +400,6 @@
 				7926479D1EFBFDB6001C12DA /* GKDemo007ViewController.m in Sources */,
 				7926473C1EFBFD6B001C12DA /* main.m in Sources */,
 				7926477E1EFBFD8A001C12DA /* UIViewController+GKCategory.m in Sources */,
-				7926479E1EFBFDB6001C12DA /* GKDemoScrollView.m in Sources */,
 				792647A41EFBFDFA001C12DA /* AppDelegate.m in Sources */,
 				7926477D1EFBFD8A001C12DA /* UIImage+GKCategory.m in Sources */,
 				7926479B1EFBFDB6001C12DA /* GKDemo005ViewController.m in Sources */,
@@ -551,6 +545,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GKNavigationControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maserati.swift.GKNavigationControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -564,6 +559,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GKNavigationControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maserati.swift.GKNavigationControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -640,6 +636,7 @@
 				792647661EFBFD6B001C12DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		792647671EFBFD6B001C12DA /* Build configuration list for PBXNativeTarget "GKNavigationControllerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -648,6 +645,7 @@
 				792647691EFBFD6B001C12DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7926476A1EFBFD6B001C12DA /* Build configuration list for PBXNativeTarget "GKNavigationControllerDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -656,6 +654,7 @@
 				7926476C1EFBFD6B001C12DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

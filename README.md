@@ -1,5 +1,5 @@
 ## GKNavigationController --- iOS自定义导航栏-导航条联动
-部分内容参考[RTRootNavigationController](https://github.com/rickytan/RTRootNavigationController)和[https://github.com/forkingdog/FDFullscreenPopGesture]
+部分内容参考 [RTRootNavigationController](https://github.com/rickytan/RTRootNavigationController) 和 [FDFullscreenPopGesture](https://github.com/forkingdog/FDFullscreenPopGesture)
 
 ## 说明：
 
@@ -27,3 +27,49 @@
 ![image](https://github.com/QuintGao/GKNavigationController/blob/master/GKNavigationControllerDemo/005.png)
 
 ![image](https://github.com/QuintGao/GKNavigationController/blob/master/GKNavigationControllerDemo/006.png)
+
+## 用法简介
+
+1.  初始化，提供两种方法
+
+```
+
++ (instancetype)gk_wrapNavigationControllerWithRootVC:(UIViewController *)rootVC;
++ (instancetype)gk_noWrapNavigationControllerWithRootVC:(UIViewController *)rootVC;
+
+```
+
+2. 部分属性介绍
+```
+GKNavigationController:
+
+/** 是否使用系统的返回按钮，默认NO */
+@property (nonatomic, assign) BOOL useSystemBackBarButtonItem;
+
+/** 单独导航栏是否使用根导航栏的风格，默认NO */
+@property (nonatomic, assign) BOOL useRootNavigationBarAttributes;
+
+
+UIViewController:
+
+/** 是否禁止当前控制器的滑动返回(包括全屏返回和边缘返回) */
+@property (nonatomic, assign) BOOL gk_interactivePopDisabled;
+
+/** 是否禁止当前控制器的全屏滑动返回 */
+@property (nonatomic, assign) BOOL gk_fullScreenPopDisabled;
+
+/** 全屏滑动时，滑动区域距离屏幕左边的最大位置，默认是0，表示全屏都可滑动 */
+@property (nonatomic, assign) CGFloat gk_popMaxAllowedDistanceToLeftEdge;
+
+```
+
+## Cocoapods
+暂未支持
+
+## 缺陷及不足
+* 没有支持自定义转场，实现如：今日头条、腾讯新闻等的转场效果
+* push到一个UITabBarController时子控制器不能控制当前界面的返回
+* 其他（待发现）
+
+## 时间记录
+2017.6.22 首次提交，发布
