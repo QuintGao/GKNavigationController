@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7926473C1EFBFD6B001C12DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926473B1EFBFD6B001C12DA /* main.m */; };
+		792647471EFBFD6B001C12DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 792647461EFBFD6B001C12DA /* Assets.xcassets */; };
+		7926474A1EFBFD6B001C12DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792647481EFBFD6B001C12DA /* LaunchScreen.storyboard */; };
+		792647551EFBFD6B001C12DA /* GKNavigationControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647541EFBFD6B001C12DA /* GKNavigationControllerDemoTests.m */; };
+		792647601EFBFD6B001C12DA /* GKNavigationControllerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926475F1EFBFD6B001C12DA /* GKNavigationControllerDemoUITests.m */; };
+		7926477A1EFBFD8A001C12DA /* btn_back_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7926476F1EFBFD8A001C12DA /* btn_back_white@2x.png */; };
+		7926477B1EFBFD8A001C12DA /* btn_back_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 792647701EFBFD8A001C12DA /* btn_back_white@3x.png */; };
+		7926477C1EFBFD8A001C12DA /* NSArray+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647721EFBFD8A001C12DA /* NSArray+GKCategory.m */; };
+		7926477D1EFBFD8A001C12DA /* UIImage+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647741EFBFD8A001C12DA /* UIImage+GKCategory.m */; };
+		7926477E1EFBFD8A001C12DA /* UIViewController+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647761EFBFD8A001C12DA /* UIViewController+GKCategory.m */; };
+		7926477F1EFBFD8A001C12DA /* GKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647791EFBFD8A001C12DA /* GKNavigationController.m */; };
+		792647971EFBFDB6001C12DA /* GKDemo001ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647831EFBFDB6001C12DA /* GKDemo001ViewController.m */; };
+		792647981EFBFDB6001C12DA /* GKDemo002ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647851EFBFDB6001C12DA /* GKDemo002ViewController.m */; };
+		792647991EFBFDB6001C12DA /* GKDemo003ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647871EFBFDB6001C12DA /* GKDemo003ViewController.m */; };
+		7926479A1EFBFDB6001C12DA /* GKDemo004ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647891EFBFDB6001C12DA /* GKDemo004ViewController.m */; };
+		7926479B1EFBFDB6001C12DA /* GKDemo005ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926478B1EFBFDB6001C12DA /* GKDemo005ViewController.m */; };
+		7926479C1EFBFDB6001C12DA /* GKDemo006ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926478D1EFBFDB6001C12DA /* GKDemo006ViewController.m */; };
+		7926479D1EFBFDB6001C12DA /* GKDemo007ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926478F1EFBFDB6001C12DA /* GKDemo007ViewController.m */; };
+		7926479E1EFBFDB6001C12DA /* GKDemoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647911EFBFDB6001C12DA /* GKDemoScrollView.m */; };
+		7926479F1EFBFDB6001C12DA /* GKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647931EFBFDB6001C12DA /* GKMainViewController.m */; };
+		792647A41EFBFDFA001C12DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647A31EFBFDFA001C12DA /* AppDelegate.m */; };
+		792647A71EFBFEB3001C12DA /* UIScrollView+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647A61EFBFEB3001C12DA /* UIScrollView+GKCategory.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		792647511EFBFD6B001C12DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7926472F1EFBFD6B001C12DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 792647361EFBFD6B001C12DA;
+			remoteInfo = GKNavigationControllerDemo;
+		};
+		7926475C1EFBFD6B001C12DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7926472F1EFBFD6B001C12DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 792647361EFBFD6B001C12DA;
+			remoteInfo = GKNavigationControllerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		792647371EFBFD6B001C12DA /* GKNavigationControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKNavigationControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7926473B1EFBFD6B001C12DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		792647461EFBFD6B001C12DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		792647491EFBFD6B001C12DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7926474B1EFBFD6B001C12DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		792647501EFBFD6B001C12DA /* GKNavigationControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GKNavigationControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		792647541EFBFD6B001C12DA /* GKNavigationControllerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKNavigationControllerDemoTests.m; sourceTree = "<group>"; };
+		792647561EFBFD6B001C12DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7926475B1EFBFD6B001C12DA /* GKNavigationControllerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GKNavigationControllerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7926475F1EFBFD6B001C12DA /* GKNavigationControllerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKNavigationControllerDemoUITests.m; sourceTree = "<group>"; };
+		792647611EFBFD6B001C12DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7926476F1EFBFD8A001C12DA /* btn_back_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_back_white@2x.png"; sourceTree = "<group>"; };
+		792647701EFBFD8A001C12DA /* btn_back_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_back_white@3x.png"; sourceTree = "<group>"; };
+		792647711EFBFD8A001C12DA /* NSArray+GKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+GKCategory.h"; sourceTree = "<group>"; };
+		792647721EFBFD8A001C12DA /* NSArray+GKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+GKCategory.m"; sourceTree = "<group>"; };
+		792647731EFBFD8A001C12DA /* UIImage+GKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GKCategory.h"; sourceTree = "<group>"; };
+		792647741EFBFD8A001C12DA /* UIImage+GKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GKCategory.m"; sourceTree = "<group>"; };
+		792647751EFBFD8A001C12DA /* UIViewController+GKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GKCategory.h"; sourceTree = "<group>"; };
+		792647761EFBFD8A001C12DA /* UIViewController+GKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GKCategory.m"; sourceTree = "<group>"; };
+		792647781EFBFD8A001C12DA /* GKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKNavigationController.h; sourceTree = "<group>"; };
+		792647791EFBFD8A001C12DA /* GKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKNavigationController.m; sourceTree = "<group>"; };
+		792647821EFBFDB6001C12DA /* GKDemo001ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo001ViewController.h; sourceTree = "<group>"; };
+		792647831EFBFDB6001C12DA /* GKDemo001ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo001ViewController.m; sourceTree = "<group>"; };
+		792647841EFBFDB6001C12DA /* GKDemo002ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo002ViewController.h; sourceTree = "<group>"; };
+		792647851EFBFDB6001C12DA /* GKDemo002ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo002ViewController.m; sourceTree = "<group>"; };
+		792647861EFBFDB6001C12DA /* GKDemo003ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo003ViewController.h; sourceTree = "<group>"; };
+		792647871EFBFDB6001C12DA /* GKDemo003ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo003ViewController.m; sourceTree = "<group>"; };
+		792647881EFBFDB6001C12DA /* GKDemo004ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo004ViewController.h; sourceTree = "<group>"; };
+		792647891EFBFDB6001C12DA /* GKDemo004ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo004ViewController.m; sourceTree = "<group>"; };
+		7926478A1EFBFDB6001C12DA /* GKDemo005ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo005ViewController.h; sourceTree = "<group>"; };
+		7926478B1EFBFDB6001C12DA /* GKDemo005ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo005ViewController.m; sourceTree = "<group>"; };
+		7926478C1EFBFDB6001C12DA /* GKDemo006ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo006ViewController.h; sourceTree = "<group>"; };
+		7926478D1EFBFDB6001C12DA /* GKDemo006ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo006ViewController.m; sourceTree = "<group>"; };
+		7926478E1EFBFDB6001C12DA /* GKDemo007ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo007ViewController.h; sourceTree = "<group>"; };
+		7926478F1EFBFDB6001C12DA /* GKDemo007ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo007ViewController.m; sourceTree = "<group>"; };
+		792647901EFBFDB6001C12DA /* GKDemoScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemoScrollView.h; sourceTree = "<group>"; };
+		792647911EFBFDB6001C12DA /* GKDemoScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemoScrollView.m; sourceTree = "<group>"; };
+		792647921EFBFDB6001C12DA /* GKMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKMainViewController.h; sourceTree = "<group>"; };
+		792647931EFBFDB6001C12DA /* GKMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKMainViewController.m; sourceTree = "<group>"; };
+		792647A21EFBFDFA001C12DA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		792647A31EFBFDFA001C12DA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		792647A51EFBFEB3001C12DA /* UIScrollView+GKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+GKCategory.h"; sourceTree = "<group>"; };
+		792647A61EFBFEB3001C12DA /* UIScrollView+GKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+GKCategory.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		792647341EFBFD6B001C12DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7926474D1EFBFD6B001C12DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		792647581EFBFD6B001C12DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7926472E1EFBFD6B001C12DA = {
+			isa = PBXGroup;
+			children = (
+				792647391EFBFD6B001C12DA /* GKNavigationControllerDemo */,
+				792647531EFBFD6B001C12DA /* GKNavigationControllerDemoTests */,
+				7926475E1EFBFD6B001C12DA /* GKNavigationControllerDemoUITests */,
+				792647381EFBFD6B001C12DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		792647381EFBFD6B001C12DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				792647371EFBFD6B001C12DA /* GKNavigationControllerDemo.app */,
+				792647501EFBFD6B001C12DA /* GKNavigationControllerDemoTests.xctest */,
+				7926475B1EFBFD6B001C12DA /* GKNavigationControllerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		792647391EFBFD6B001C12DA /* GKNavigationControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				792647801EFBFDA5001C12DA /* Classes */,
+				7926476D1EFBFD8A001C12DA /* GKNavigationController */,
+				7926473A1EFBFD6B001C12DA /* Supporting Files */,
+			);
+			path = GKNavigationControllerDemo;
+			sourceTree = "<group>";
+		};
+		7926473A1EFBFD6B001C12DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				792647461EFBFD6B001C12DA /* Assets.xcassets */,
+				792647481EFBFD6B001C12DA /* LaunchScreen.storyboard */,
+				7926474B1EFBFD6B001C12DA /* Info.plist */,
+				7926473B1EFBFD6B001C12DA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		792647531EFBFD6B001C12DA /* GKNavigationControllerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				792647541EFBFD6B001C12DA /* GKNavigationControllerDemoTests.m */,
+				792647561EFBFD6B001C12DA /* Info.plist */,
+			);
+			path = GKNavigationControllerDemoTests;
+			sourceTree = "<group>";
+		};
+		7926475E1EFBFD6B001C12DA /* GKNavigationControllerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7926475F1EFBFD6B001C12DA /* GKNavigationControllerDemoUITests.m */,
+				792647611EFBFD6B001C12DA /* Info.plist */,
+			);
+			path = GKNavigationControllerDemoUITests;
+			sourceTree = "<group>";
+		};
+		7926476D1EFBFD8A001C12DA /* GKNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				7926476E1EFBFD8A001C12DA /* Category */,
+				792647771EFBFD8A001C12DA /* Classes */,
+			);
+			name = GKNavigationController;
+			path = ../../GKNavigationController;
+			sourceTree = "<group>";
+		};
+		7926476E1EFBFD8A001C12DA /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7926476F1EFBFD8A001C12DA /* btn_back_white@2x.png */,
+				792647701EFBFD8A001C12DA /* btn_back_white@3x.png */,
+				792647711EFBFD8A001C12DA /* NSArray+GKCategory.h */,
+				792647721EFBFD8A001C12DA /* NSArray+GKCategory.m */,
+				792647731EFBFD8A001C12DA /* UIImage+GKCategory.h */,
+				792647741EFBFD8A001C12DA /* UIImage+GKCategory.m */,
+				792647A51EFBFEB3001C12DA /* UIScrollView+GKCategory.h */,
+				792647A61EFBFEB3001C12DA /* UIScrollView+GKCategory.m */,
+				792647751EFBFD8A001C12DA /* UIViewController+GKCategory.h */,
+				792647761EFBFD8A001C12DA /* UIViewController+GKCategory.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		792647771EFBFD8A001C12DA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				792647781EFBFD8A001C12DA /* GKNavigationController.h */,
+				792647791EFBFD8A001C12DA /* GKNavigationController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		792647801EFBFDA5001C12DA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				792647A11EFBFDE4001C12DA /* AppDelegate */,
+				792647811EFBFDB6001C12DA /* Demo */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		792647811EFBFDB6001C12DA /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				792647921EFBFDB6001C12DA /* GKMainViewController.h */,
+				792647931EFBFDB6001C12DA /* GKMainViewController.m */,
+				792647821EFBFDB6001C12DA /* GKDemo001ViewController.h */,
+				792647831EFBFDB6001C12DA /* GKDemo001ViewController.m */,
+				792647841EFBFDB6001C12DA /* GKDemo002ViewController.h */,
+				792647851EFBFDB6001C12DA /* GKDemo002ViewController.m */,
+				792647861EFBFDB6001C12DA /* GKDemo003ViewController.h */,
+				792647871EFBFDB6001C12DA /* GKDemo003ViewController.m */,
+				792647881EFBFDB6001C12DA /* GKDemo004ViewController.h */,
+				792647891EFBFDB6001C12DA /* GKDemo004ViewController.m */,
+				7926478A1EFBFDB6001C12DA /* GKDemo005ViewController.h */,
+				7926478B1EFBFDB6001C12DA /* GKDemo005ViewController.m */,
+				7926478C1EFBFDB6001C12DA /* GKDemo006ViewController.h */,
+				7926478D1EFBFDB6001C12DA /* GKDemo006ViewController.m */,
+				7926478E1EFBFDB6001C12DA /* GKDemo007ViewController.h */,
+				7926478F1EFBFDB6001C12DA /* GKDemo007ViewController.m */,
+				792647901EFBFDB6001C12DA /* GKDemoScrollView.h */,
+				792647911EFBFDB6001C12DA /* GKDemoScrollView.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		792647A11EFBFDE4001C12DA /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				792647A21EFBFDFA001C12DA /* AppDelegate.h */,
+				792647A31EFBFDFA001C12DA /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		792647361EFBFD6B001C12DA /* GKNavigationControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 792647641EFBFD6B001C12DA /* Build configuration list for PBXNativeTarget "GKNavigationControllerDemo" */;
+			buildPhases = (
+				792647331EFBFD6B001C12DA /* Sources */,
+				792647341EFBFD6B001C12DA /* Frameworks */,
+				792647351EFBFD6B001C12DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GKNavigationControllerDemo;
+			productName = GKNavigationControllerDemo;
+			productReference = 792647371EFBFD6B001C12DA /* GKNavigationControllerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7926474F1EFBFD6B001C12DA /* GKNavigationControllerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 792647671EFBFD6B001C12DA /* Build configuration list for PBXNativeTarget "GKNavigationControllerDemoTests" */;
+			buildPhases = (
+				7926474C1EFBFD6B001C12DA /* Sources */,
+				7926474D1EFBFD6B001C12DA /* Frameworks */,
+				7926474E1EFBFD6B001C12DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				792647521EFBFD6B001C12DA /* PBXTargetDependency */,
+			);
+			name = GKNavigationControllerDemoTests;
+			productName = GKNavigationControllerDemoTests;
+			productReference = 792647501EFBFD6B001C12DA /* GKNavigationControllerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7926475A1EFBFD6B001C12DA /* GKNavigationControllerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7926476A1EFBFD6B001C12DA /* Build configuration list for PBXNativeTarget "GKNavigationControllerDemoUITests" */;
+			buildPhases = (
+				792647571EFBFD6B001C12DA /* Sources */,
+				792647581EFBFD6B001C12DA /* Frameworks */,
+				792647591EFBFD6B001C12DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7926475D1EFBFD6B001C12DA /* PBXTargetDependency */,
+			);
+			name = GKNavigationControllerDemoUITests;
+			productName = GKNavigationControllerDemoUITests;
+			productReference = 7926475B1EFBFD6B001C12DA /* GKNavigationControllerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7926472F1EFBFD6B001C12DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "高坤";
+				TargetAttributes = {
+					792647361EFBFD6B001C12DA = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Manual;
+					};
+					7926474F1EFBFD6B001C12DA = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 85SKD6C7ZZ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 792647361EFBFD6B001C12DA;
+					};
+					7926475A1EFBFD6B001C12DA = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 85SKD6C7ZZ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 792647361EFBFD6B001C12DA;
+					};
+				};
+			};
+			buildConfigurationList = 792647321EFBFD6B001C12DA /* Build configuration list for PBXProject "GKNavigationControllerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7926472E1EFBFD6B001C12DA;
+			productRefGroup = 792647381EFBFD6B001C12DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				792647361EFBFD6B001C12DA /* GKNavigationControllerDemo */,
+				7926474F1EFBFD6B001C12DA /* GKNavigationControllerDemoTests */,
+				7926475A1EFBFD6B001C12DA /* GKNavigationControllerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		792647351EFBFD6B001C12DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7926474A1EFBFD6B001C12DA /* LaunchScreen.storyboard in Resources */,
+				792647471EFBFD6B001C12DA /* Assets.xcassets in Resources */,
+				7926477A1EFBFD8A001C12DA /* btn_back_white@2x.png in Resources */,
+				7926477B1EFBFD8A001C12DA /* btn_back_white@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7926474E1EFBFD6B001C12DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		792647591EFBFD6B001C12DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		792647331EFBFD6B001C12DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7926477F1EFBFD8A001C12DA /* GKNavigationController.m in Sources */,
+				792647971EFBFDB6001C12DA /* GKDemo001ViewController.m in Sources */,
+				792647981EFBFDB6001C12DA /* GKDemo002ViewController.m in Sources */,
+				792647991EFBFDB6001C12DA /* GKDemo003ViewController.m in Sources */,
+				7926479C1EFBFDB6001C12DA /* GKDemo006ViewController.m in Sources */,
+				7926479F1EFBFDB6001C12DA /* GKMainViewController.m in Sources */,
+				792647A71EFBFEB3001C12DA /* UIScrollView+GKCategory.m in Sources */,
+				7926479A1EFBFDB6001C12DA /* GKDemo004ViewController.m in Sources */,
+				7926477C1EFBFD8A001C12DA /* NSArray+GKCategory.m in Sources */,
+				7926479D1EFBFDB6001C12DA /* GKDemo007ViewController.m in Sources */,
+				7926473C1EFBFD6B001C12DA /* main.m in Sources */,
+				7926477E1EFBFD8A001C12DA /* UIViewController+GKCategory.m in Sources */,
+				7926479E1EFBFDB6001C12DA /* GKDemoScrollView.m in Sources */,
+				792647A41EFBFDFA001C12DA /* AppDelegate.m in Sources */,
+				7926477D1EFBFD8A001C12DA /* UIImage+GKCategory.m in Sources */,
+				7926479B1EFBFDB6001C12DA /* GKDemo005ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7926474C1EFBFD6B001C12DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				792647551EFBFD6B001C12DA /* GKNavigationControllerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		792647571EFBFD6B001C12DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				792647601EFBFD6B001C12DA /* GKNavigationControllerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		792647521EFBFD6B001C12DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 792647361EFBFD6B001C12DA /* GKNavigationControllerDemo */;
+			targetProxy = 792647511EFBFD6B001C12DA /* PBXContainerItemProxy */;
+		};
+		7926475D1EFBFD6B001C12DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 792647361EFBFD6B001C12DA /* GKNavigationControllerDemo */;
+			targetProxy = 7926475C1EFBFD6B001C12DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		792647481EFBFD6B001C12DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				792647491EFBFD6B001C12DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		792647621EFBFD6B001C12DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		792647631EFBFD6B001C12DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		792647651EFBFD6B001C12DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GKNavigationControllerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maserati.swift.GKNavigationControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		792647661EFBFD6B001C12DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GKNavigationControllerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maserati.swift.GKNavigationControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		792647681EFBFD6B001C12DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 85SKD6C7ZZ;
+				INFOPLIST_FILE = GKNavigationControllerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maserati.swift.GKNavigationControllerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GKNavigationControllerDemo.app/GKNavigationControllerDemo";
+			};
+			name = Debug;
+		};
+		792647691EFBFD6B001C12DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 85SKD6C7ZZ;
+				INFOPLIST_FILE = GKNavigationControllerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maserati.swift.GKNavigationControllerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GKNavigationControllerDemo.app/GKNavigationControllerDemo";
+			};
+			name = Release;
+		};
+		7926476B1EFBFD6B001C12DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 85SKD6C7ZZ;
+				INFOPLIST_FILE = GKNavigationControllerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maserati.swift.GKNavigationControllerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GKNavigationControllerDemo;
+			};
+			name = Debug;
+		};
+		7926476C1EFBFD6B001C12DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 85SKD6C7ZZ;
+				INFOPLIST_FILE = GKNavigationControllerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maserati.swift.GKNavigationControllerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GKNavigationControllerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		792647321EFBFD6B001C12DA /* Build configuration list for PBXProject "GKNavigationControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				792647621EFBFD6B001C12DA /* Debug */,
+				792647631EFBFD6B001C12DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		792647641EFBFD6B001C12DA /* Build configuration list for PBXNativeTarget "GKNavigationControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				792647651EFBFD6B001C12DA /* Debug */,
+				792647661EFBFD6B001C12DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		792647671EFBFD6B001C12DA /* Build configuration list for PBXNativeTarget "GKNavigationControllerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				792647681EFBFD6B001C12DA /* Debug */,
+				792647691EFBFD6B001C12DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7926476A1EFBFD6B001C12DA /* Build configuration list for PBXNativeTarget "GKNavigationControllerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7926476B1EFBFD6B001C12DA /* Debug */,
+				7926476C1EFBFD6B001C12DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7926472F1EFBFD6B001C12DA /* Project object */;
+}
