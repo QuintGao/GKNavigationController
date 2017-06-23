@@ -53,10 +53,15 @@
     [label sizeToFit];
     label.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:label];
+    
+    if (self.tabBarController.navigationController) {
+        [self showBackBtn];
+    }
 }
 
 - (void)btnAction {
     GKDemo003ViewController *demo003VC = [GKDemo003ViewController new];
+    demo003VC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:demo003VC animated:YES];
 }
 

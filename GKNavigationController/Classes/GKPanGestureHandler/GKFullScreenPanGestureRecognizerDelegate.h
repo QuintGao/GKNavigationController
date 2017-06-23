@@ -17,4 +17,9 @@
  */
 @property (nonatomic, weak) GKNavigationController *navigationController;
 
+/**
+ 系统返回手势的target
+ */
+@property (nonatomic, strong) id popGestureTarget;
+
 @end

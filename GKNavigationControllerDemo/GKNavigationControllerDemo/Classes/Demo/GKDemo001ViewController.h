@@ -6,8 +6,8 @@
 //  Copyright © 2017年 高坤. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "GKDemoBaseViewController.h"
 
-@interface GKDemo001ViewController : UIViewController
+@interface GKDemo001ViewController : GKDemoBaseViewController
 
 @end

@@ -44,6 +44,10 @@
     [self.view addSubview:btn];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStyleDone target:self action:@selector(dismiss)];
+    
+    if (self.tabBarController.navigationController) {
+        [self showBackBtn];
+    }
 }
 
 - (void)dismiss {
@@ -56,9 +60,8 @@
 
 - (void)btnAction {
     GKDemo002ViewController *demo002VC = [GKDemo002ViewController new];
+    demo002VC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:demo002VC animated:YES];
-    
-    demo002VC.hidesBottomBarWhenPushed = NO;
 }
 
 - (BOOL)navigationShouldPopOnBackButton {

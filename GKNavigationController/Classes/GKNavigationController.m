@@ -26,7 +26,7 @@ static inline UIViewController *GKUnWrapViewController(UIViewController *viewCon
 
 @property (nonatomic, strong) UIPanGestureRecognizer *panGesture;
 
-//@property (nonatomic, strong) id panGestureDelegate;
+@property (nonatomic, strong) id popGestureTarget;
 
 @property (nonatomic, strong) GKFullScreenPanGestureRecognizerDelegate *panGestureDelegate;
 
@@ -55,19 +55,21 @@ static inline UIViewController *GKUnWrapViewController(UIViewController *viewCon
 
 #pragma mark - Private Method
 
-- (void)setupPanGesture {
-    self.panGestureDelegate = self.interactivePopGestureRecognizer.delegate;
-    
-    SEL action = NSSelectorFromString(@"handleNavigationTransition:");
-    
-    self.panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self.panGestureDelegate action:action];
-    
-    self.panGesture.maximumNumberOfTouches = 1;
+- (UIPanGestureRecognizer *)panGesture {
+    if (!_panGesture) {
+        
+        _panGesture = [[UIPanGestureRecognizer alloc] init];
+        
+        _panGesture.maximumNumberOfTouches = 1;
+    }
+    return _panGesture;
 }
 
 - (GKFullScreenPanGestureRecognizerDelegate *)panGestureDelegate {
     if (!_panGestureDelegate) {
         _panGestureDelegate = [GKFullScreenPanGestureRecognizerDelegate new];
+        _panGestureDelegate.navigationController = self;
+        _panGestureDelegate.popGestureTarget = self.popGestureTarget;
     }
     return _panGestureDelegate;
 }
@@ -80,7 +82,8 @@ static inline UIViewController *GKUnWrapViewController(UIViewController *viewCon
     [super setDelegate:self];
     [super setNavigationBarHidden:YES animated:NO];
     
-    [self setupPanGesture];
+    // 记录系统返回手势的target
+    self.popGestureTarget = self.interactivePopGestureRecognizer.delegate;
 }
 
 - (UIViewController *)gk_visibleViewController {
@@ -171,48 +174,13 @@ static inline UIViewController *GKUnWrapViewController(UIViewController *viewCon
         if (!isRootVC) {
             [self.interactivePopGestureRecognizer.view addGestureRecognizer:self.panGesture];
         }
-        self.panGesture.delegate = self;
+        
+        // 设置代理
+        self.panGesture.delegate = self.panGestureDelegate;
         
         self.interactivePopGestureRecognizer.delegate = nil;
         self.interactivePopGestureRecognizer.enabled  = NO;
     }
-}
-
-#pragma mark - UIGestureRecognizerDelegate
-
-- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
-    
-    // 获取当前最顶层的控制器
-    UIViewController *topViewController = GKUnWrapViewController(self.viewControllers.lastObject);
-    
-    if (topViewController.gk_interactivePopDisabled) {
-        return NO;
-    }
-    
-    // 距离左边位置，全屏滑动时生效
-    CGPoint beginningLocation = [gestureRecognizer locationInView:gestureRecognizer.view];
-
-    CGFloat maxAllowedInitialDistance = topViewController.gk_popMaxAllowedDistanceToLeftEdge;
-    if (maxAllowedInitialDistance > 0 && beginningLocation.x > maxAllowedInitialDistance && !topViewController.gk_fullScreenPopDisabled) {
-        return NO;
-    }
-    
-    if ([[self.navigationController valueForKey:@"_isTransitioning"] boolValue]) {
-        return NO;
-    }
-    
-    if ([gestureRecognizer isKindOfClass:[UIPanGestureRecognizer class]] && !topViewController.gk_fullScreenPopDisabled) {
-        UIPanGestureRecognizer *panGesture = (UIPanGestureRecognizer *)gestureRecognizer;
-        
-        CGPoint translation = [panGesture translationInView:gestureRecognizer.view];
-        BOOL isLeftToRight = [UIApplication sharedApplication].userInterfaceLayoutDirection == UIUserInterfaceLayoutDirectionLeftToRight;
-        CGFloat multiplier = isLeftToRight ? 1 : -1;
-        if ((translation.x * multiplier) <= 0) {
-            return NO;
-        }
-    }
-    
-    return YES;
 }
 
 @end

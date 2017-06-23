@@ -34,7 +34,7 @@
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:name];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_selected", name]];
-    
+
     GKNavigationController *nav = [[GKNavigationController alloc] initWithRootViewController:vc];
     
     [self addChildViewController:nav];

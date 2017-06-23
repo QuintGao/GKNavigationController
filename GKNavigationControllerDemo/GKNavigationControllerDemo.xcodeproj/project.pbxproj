@@ -31,6 +31,7 @@
 		792647C41EFCBE25001C12DA /* GKWrapNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647C31EFCBE25001C12DA /* GKWrapNavigationController.m */; };
 		792647C71EFCC583001C12DA /* UIViewController+GKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647C61EFCC583001C12DA /* UIViewController+GKNavigationController.m */; };
 		792647CB1EFD2F42001C12DA /* GKFullScreenPanGestureRecognizerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647CA1EFD2F42001C12DA /* GKFullScreenPanGestureRecognizerDelegate.m */; };
+		792647CE1EFD4DB3001C12DA /* GKDemoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647CD1EFD4DB3001C12DA /* GKDemoBaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,8 @@
 		792647C61EFCC583001C12DA /* UIViewController+GKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GKNavigationController.m"; sourceTree = "<group>"; };
 		792647C91EFD2F42001C12DA /* GKFullScreenPanGestureRecognizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKFullScreenPanGestureRecognizerDelegate.h; sourceTree = "<group>"; };
 		792647CA1EFD2F42001C12DA /* GKFullScreenPanGestureRecognizerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKFullScreenPanGestureRecognizerDelegate.m; sourceTree = "<group>"; };
+		792647CC1EFD4DB3001C12DA /* GKDemoBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemoBaseViewController.h; sourceTree = "<group>"; };
+		792647CD1EFD4DB3001C12DA /* GKDemoBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemoBaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +237,8 @@
 			children = (
 				792647921EFBFDB6001C12DA /* GKMainViewController.h */,
 				792647931EFBFDB6001C12DA /* GKMainViewController.m */,
+				792647CC1EFD4DB3001C12DA /* GKDemoBaseViewController.h */,
+				792647CD1EFD4DB3001C12DA /* GKDemoBaseViewController.m */,
 				792647821EFBFDB6001C12DA /* GKDemo001ViewController.h */,
 				792647831EFBFDB6001C12DA /* GKDemo001ViewController.m */,
 				792647841EFBFDB6001C12DA /* GKDemo002ViewController.h */,
@@ -420,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7926477F1EFBFD8A001C12DA /* GKNavigationController.m in Sources */,
+				792647CE1EFD4DB3001C12DA /* GKDemoBaseViewController.m in Sources */,
 				792647971EFBFDB6001C12DA /* GKDemo001ViewController.m in Sources */,
 				792647981EFBFDB6001C12DA /* GKDemo002ViewController.m in Sources */,
 				792647991EFBFDB6001C12DA /* GKDemo003ViewController.m in Sources */,
