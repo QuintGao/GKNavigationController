@@ -14,7 +14,6 @@
 		792647601EFBFD6B001C12DA /* GKNavigationControllerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926475F1EFBFD6B001C12DA /* GKNavigationControllerDemoUITests.m */; };
 		7926477A1EFBFD8A001C12DA /* btn_back_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7926476F1EFBFD8A001C12DA /* btn_back_white@2x.png */; };
 		7926477B1EFBFD8A001C12DA /* btn_back_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 792647701EFBFD8A001C12DA /* btn_back_white@3x.png */; };
-		7926477C1EFBFD8A001C12DA /* NSArray+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647721EFBFD8A001C12DA /* NSArray+GKCategory.m */; };
 		7926477D1EFBFD8A001C12DA /* UIImage+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647741EFBFD8A001C12DA /* UIImage+GKCategory.m */; };
 		7926477E1EFBFD8A001C12DA /* UIViewController+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647761EFBFD8A001C12DA /* UIViewController+GKCategory.m */; };
 		7926477F1EFBFD8A001C12DA /* GKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647791EFBFD8A001C12DA /* GKNavigationController.m */; };
@@ -31,6 +30,7 @@
 		792647C11EFCBE10001C12DA /* GKWrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647C01EFCBE10001C12DA /* GKWrapViewController.m */; };
 		792647C41EFCBE25001C12DA /* GKWrapNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647C31EFCBE25001C12DA /* GKWrapNavigationController.m */; };
 		792647C71EFCC583001C12DA /* UIViewController+GKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647C61EFCC583001C12DA /* UIViewController+GKNavigationController.m */; };
+		792647CB1EFD2F42001C12DA /* GKFullScreenPanGestureRecognizerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647CA1EFD2F42001C12DA /* GKFullScreenPanGestureRecognizerDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +64,6 @@
 		792647611EFBFD6B001C12DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7926476F1EFBFD8A001C12DA /* btn_back_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_back_white@2x.png"; sourceTree = "<group>"; };
 		792647701EFBFD8A001C12DA /* btn_back_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_back_white@3x.png"; sourceTree = "<group>"; };
-		792647711EFBFD8A001C12DA /* NSArray+GKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+GKCategory.h"; sourceTree = "<group>"; };
-		792647721EFBFD8A001C12DA /* NSArray+GKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+GKCategory.m"; sourceTree = "<group>"; };
 		792647731EFBFD8A001C12DA /* UIImage+GKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GKCategory.h"; sourceTree = "<group>"; };
 		792647741EFBFD8A001C12DA /* UIImage+GKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GKCategory.m"; sourceTree = "<group>"; };
 		792647751EFBFD8A001C12DA /* UIViewController+GKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GKCategory.h"; sourceTree = "<group>"; };
@@ -98,6 +96,8 @@
 		792647C31EFCBE25001C12DA /* GKWrapNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKWrapNavigationController.m; sourceTree = "<group>"; };
 		792647C51EFCC583001C12DA /* UIViewController+GKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GKNavigationController.h"; sourceTree = "<group>"; };
 		792647C61EFCC583001C12DA /* UIViewController+GKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GKNavigationController.m"; sourceTree = "<group>"; };
+		792647C91EFD2F42001C12DA /* GKFullScreenPanGestureRecognizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKFullScreenPanGestureRecognizerDelegate.h; sourceTree = "<group>"; };
+		792647CA1EFD2F42001C12DA /* GKFullScreenPanGestureRecognizerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKFullScreenPanGestureRecognizerDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,8 +199,6 @@
 			children = (
 				7926476F1EFBFD8A001C12DA /* btn_back_white@2x.png */,
 				792647701EFBFD8A001C12DA /* btn_back_white@3x.png */,
-				792647711EFBFD8A001C12DA /* NSArray+GKCategory.h */,
-				792647721EFBFD8A001C12DA /* NSArray+GKCategory.m */,
 				792647731EFBFD8A001C12DA /* UIImage+GKCategory.h */,
 				792647741EFBFD8A001C12DA /* UIImage+GKCategory.m */,
 				792647A51EFBFEB3001C12DA /* UIScrollView+GKCategory.h */,
@@ -214,6 +212,7 @@
 		792647771EFBFD8A001C12DA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				792647C81EFD2F1F001C12DA /* GKPanGestureHandler */,
 				792647BE1EFCBDF1001C12DA /* GKWrapViewController */,
 				792647781EFBFD8A001C12DA /* GKNavigationController.h */,
 				792647791EFBFD8A001C12DA /* GKNavigationController.m */,
@@ -273,6 +272,15 @@
 				792647C61EFCC583001C12DA /* UIViewController+GKNavigationController.m */,
 			);
 			path = GKWrapViewController;
+			sourceTree = "<group>";
+		};
+		792647C81EFD2F1F001C12DA /* GKPanGestureHandler */ = {
+			isa = PBXGroup;
+			children = (
+				792647C91EFD2F42001C12DA /* GKFullScreenPanGestureRecognizerDelegate.h */,
+				792647CA1EFD2F42001C12DA /* GKFullScreenPanGestureRecognizerDelegate.m */,
+			);
+			path = GKPanGestureHandler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,8 +426,8 @@
 				7926479C1EFBFDB6001C12DA /* GKDemo006ViewController.m in Sources */,
 				7926479F1EFBFDB6001C12DA /* GKMainViewController.m in Sources */,
 				792647A71EFBFEB3001C12DA /* UIScrollView+GKCategory.m in Sources */,
+				792647CB1EFD2F42001C12DA /* GKFullScreenPanGestureRecognizerDelegate.m in Sources */,
 				7926479A1EFBFDB6001C12DA /* GKDemo004ViewController.m in Sources */,
-				7926477C1EFBFD8A001C12DA /* NSArray+GKCategory.m in Sources */,
 				7926479D1EFBFDB6001C12DA /* GKDemo007ViewController.m in Sources */,
 				792647C41EFCBE25001C12DA /* GKWrapNavigationController.m in Sources */,
 				7926473C1EFBFD6B001C12DA /* main.m in Sources */,

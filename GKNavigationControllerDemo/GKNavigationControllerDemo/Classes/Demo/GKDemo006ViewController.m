@@ -11,6 +11,8 @@
 
 @interface GKDemo006ViewController ()<UIGestureRecognizerDelegate>
 
+@property (nonatomic, assign) NSInteger rowCount;
+
 @end
 
 @implementation GKDemo006ViewController
@@ -26,12 +28,14 @@
     
 //    self.gk_fullScreenPopDisabled = YES;
     
+    self.rowCount = 20;
+    
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 20;
+    return self.rowCount;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -51,11 +55,15 @@
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        self.rowCount --;
+        
         // Delete the row from the data source
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    }
 }
 
 

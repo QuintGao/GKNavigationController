@@ -24,9 +24,6 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     GKNavigationController *navVC = [[GKNavigationController alloc] initWithRootViewController:[GKMainViewController new]];
-    // 使用系统默认的返回按钮样式
-    navVC.useSystemBackBarButtonItem     = YES;
-    navVC.useRootNavigationBarAttributes = YES;
     
     self.window.rootViewController = navVC;
     

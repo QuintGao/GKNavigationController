@@ -9,6 +9,7 @@
 #import "GKNavigationController.h"
 #import "GKWrapViewController.h"
 #import "GKWrapNavigationController.h"
+#import "GKFullScreenPanGestureRecognizerDelegate.h"
 
 // 使用static inline创建静态内联函数，方便调用
 static inline UIViewController *GKUnWrapViewController(UIViewController *viewController) {
@@ -24,7 +25,10 @@ static inline UIViewController *GKUnWrapViewController(UIViewController *viewCon
 @property (nonatomic, assign) id<UINavigationControllerDelegate> gk_delegate;
 
 @property (nonatomic, strong) UIPanGestureRecognizer *panGesture;
-@property (nonatomic, strong) id panGestureDelegate;
+
+//@property (nonatomic, strong) id panGestureDelegate;
+
+@property (nonatomic, strong) GKFullScreenPanGestureRecognizerDelegate *panGestureDelegate;
 
 @end
 
@@ -59,6 +63,13 @@ static inline UIViewController *GKUnWrapViewController(UIViewController *viewCon
     self.panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self.panGestureDelegate action:action];
     
     self.panGesture.maximumNumberOfTouches = 1;
+}
+
+- (GKFullScreenPanGestureRecognizerDelegate *)panGestureDelegate {
+    if (!_panGestureDelegate) {
+        _panGestureDelegate = [GKFullScreenPanGestureRecognizerDelegate new];
+    }
+    return _panGestureDelegate;
 }
 
 #pragma mark - Override
@@ -200,11 +211,6 @@ static inline UIViewController *GKUnWrapViewController(UIViewController *viewCon
             return NO;
         }
     }
-    
-    return YES;
-}
-
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
     
     return YES;
 }
