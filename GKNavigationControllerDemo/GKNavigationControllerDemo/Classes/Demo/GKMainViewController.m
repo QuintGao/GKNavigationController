@@ -70,10 +70,12 @@
     UIViewController *vc = [[class alloc] init];
     
     if (indexPath.row == 4) {
-        GKNavigationController *nav = [GKNavigationController gk_noWrapNavigationControllerWithRootVC:vc];
-        nav.useSystemBackBarButtonItem = YES;
         
-        [self presentViewController:nav animated:YES completion:nil];
+//        GKNavigationController *nav = [[GKNavigationController alloc] initWithRootViewController:vc];
+//        nav.useSystemBackBarButtonItem = YES;
+        
+//        [self presentViewController:nav animated:YES completion:nil];
+        [self presentViewController:vc animated:YES completion:nil];
         
         return;
     }

@@ -11,6 +11,7 @@
 #import "GKDemo001ViewController.h"
 #import "GKDemo002ViewController.h"
 #import "GKDemo003ViewController.h"
+#import "GKWrapNavigationController.h"
 
 @interface GKDemo004ViewController ()<UITabBarControllerDelegate>
 
@@ -34,7 +35,7 @@
     vc.tabBarItem.image = [UIImage imageNamed:name];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_selected", name]];
     
-    GKContainerNavigationController *nav = [[GKContainerNavigationController alloc] initWithRootViewController:vc];
+    GKNavigationController *nav = [[GKNavigationController alloc] initWithRootViewController:vc];
     
     [self addChildViewController:nav];
 }

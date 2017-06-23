@@ -28,7 +28,7 @@
     self.gk_fullScreenPopDisabled = YES;
     
     UILabel *label = [UILabel new];
-    label.text = @"我是变色导航栏控制器，我禁用了全屏手势返回，使用系统的边缘手势返回可以返回哦！";
+    label.text = @"我是变色导航栏控制器，我禁用了全屏手势返回，可以使用系统的边缘手势进行返回哦，另外我还自定义的返回按钮";
     label.font = [UIFont systemFontOfSize:16];
     label.numberOfLines = 0;
     label.frame = CGRectMake(0, 200, self.view.frame.size.width, 0);
@@ -63,6 +63,16 @@
 
 - (BOOL)navigationShouldPopOnBackButton {
     return YES;
+}
+
+#pragma mark - GKNavigationItemCustomProtocol
+- (UIBarButtonItem *)gk_customBackItemWithTarget:(id)target action:(SEL)action {
+    UIButton *backBtn  = [UIButton new];
+    [backBtn setImage:[UIImage imageNamed:@"btn_back_white"] forState:UIControlStateNormal];
+    [backBtn sizeToFit];
+    [backBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
+    
+    return [[UIBarButtonItem alloc] initWithCustomView:backBtn];
 }
 
 @end

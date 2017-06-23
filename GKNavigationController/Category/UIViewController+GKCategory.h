@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class GKNavigationController;
+@class GKNavigationController, GKWrapViewController;
 
 @protocol GKNavigationItemCustomProtocol <NSObject>
 
@@ -29,10 +29,14 @@
 /** 全屏滑动时，滑动区域距离屏幕左边的最大位置，默认是0，表示全屏都可滑动 */
 @property (nonatomic, assign) CGFloat gk_popMaxAllowedDistanceToLeftEdge;
 
-@property (nonatomic, strong, readonly) GKNavigationController *gk_navigationController;
+/** 设置导航栏的透明度 */
+@property (nonatomic, assign) CGFloat gk_navBarAlpha;
 
-- (Class)gk_navigationBarClass;
 
-- (void)showTransparentNavbar;
+@end
+
+@interface UINavigationController (GKCategory)
+
+- (void)setNavBarAlpha:(CGFloat)alpha;
 
 @end

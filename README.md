@@ -11,6 +11,7 @@
    * 支持控制器开关返回手势
    * 支持控制器开关全屏返回手势
    * 支持控制器设置距离左边屏幕左边的滑动区域
+   * 支持动态设置导航栏透明度，可实现渐变效果
    * 完美解决UITableView，UIScrollView滑动手势冲突
    * 支持Push一个UITabBarController（有缺陷）
     
@@ -61,6 +62,9 @@ UIViewController:
 /** 全屏滑动时，滑动区域距离屏幕左边的最大位置，默认是0，表示全屏都可滑动 */
 @property (nonatomic, assign) CGFloat gk_popMaxAllowedDistanceToLeftEdge;
 
+/** 设置导航栏的透明度 */
+@property (nonatomic, assign) CGFloat gk_navBarAlpha;
+
 ```
 
 ## Cocoapods
@@ -68,8 +72,10 @@ UIViewController:
 
 ## 缺陷及不足
 * 没有支持自定义转场，实现如：今日头条、腾讯新闻等的转场效果
-* push到一个UITabBarController时子控制器不能控制当前界面的返回
+* push到一个UITabBarController时需要子控制器重新自定义返回按钮
+* 手势禁用方法只能在viewDidLoad方法里面实现，在其他地方修改不起作用
 * 其他（待发现）
 
 ## 时间记录
 2017.6.22 首次提交，发布
+2017.6.23 部分内容修改，完善

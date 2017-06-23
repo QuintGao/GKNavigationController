@@ -10,7 +10,9 @@
 #import "GKNavigationController.h"
 #import "GKDemo003ViewController.h"
 
-@interface GKDemo002ViewController ()
+@interface GKDemo002ViewController ()<UIScrollViewDelegate>
+
+@property (nonatomic, strong) UIScrollView *scrollView;
 
 @end
 
@@ -19,11 +21,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self showTransparentNavbar];
-    
     self.view.backgroundColor = [UIColor whiteColor];
     
+    self.gk_navBarAlpha = 0.0;
+    
     self.navigationItem.title = @"控制器002";
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
+    self.scrollView.backgroundColor = [UIColor darkGrayColor];
+    self.scrollView.contentSize = CGSizeMake(0, self.view.frame.size.height + 200);
+    self.scrollView.delegate = self;
+    [self.view addSubview:self.scrollView];
     
     // 禁用滑动返回
     self.gk_interactivePopDisabled = YES;
@@ -36,7 +46,7 @@
     [self.view addSubview:btn];
     
     UILabel *label = [UILabel new];
-    label.text = @"我是透明导航栏控制器，我禁用了滑动返回手势";
+    label.text = @"我是透明导航栏控制器，我禁用了滑动返回手势，我还实现了导航栏渐变效果哦";
     label.font = [UIFont systemFontOfSize:16];
     label.numberOfLines = 0;
     label.frame = CGRectMake(0, 200, self.view.frame.size.width, 0);
@@ -61,6 +71,36 @@
     [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     
     return [[UIBarButtonItem alloc] initWithCustomView:btn];
+}
+
+#pragma mark - UIScrollViewDelegate
+
+// 渐变导航栏
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    CGFloat contentY = scrollView.contentOffset.y;
+    
+    NSLog(@"%f", contentY);
+    
+    if (contentY <= 0) {
+        self.gk_navBarAlpha = 0;
+        return;
+    }
+    
+    // 渐变区间 (0 - 80)
+    if (contentY > 0 && contentY < 160) {
+        CGFloat alpha = contentY / (160 - 0);
+        
+        self.gk_navBarAlpha = alpha;
+    }else {
+        self.gk_navBarAlpha = 1.0;
+    }
+    
+    
+    
+    
+    
+    
+    
 }
 
 @end

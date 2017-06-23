@@ -9,16 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "UIViewController+GKCategory.h"
 
-@interface GKContainerViewController : UIViewController
-
-@property (nonatomic, strong, readonly) __kindof UIViewController *contentViewController;
-
-@end
-
-@interface GKContainerNavigationController : UINavigationController
-
-@end
-
 /**
  根导航控制器
  */
@@ -38,10 +28,5 @@
 
 /** 获取所有的contentViewController */
 @property (nonatomic, strong, readonly) NSArray <__kindof UIViewController *> *gk_viewControllers;
-
-
-// 快速创建导航栏
-+ (instancetype)gk_wrapNavigationControllerWithRootVC:(UIViewController *)rootVC;
-+ (instancetype)gk_noWrapNavigationControllerWithRootVC:(UIViewController *)rootVC;
 
 @end

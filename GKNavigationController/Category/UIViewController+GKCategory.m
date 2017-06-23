@@ -10,10 +10,12 @@
 #import "UIImage+GKCategory.h"
 #import <objc/runtime.h>
 #import "GKNavigationController.h"
+#import "GKWrapViewController.h"
 
 static NSString *const GKInteractivePopKey = @"GKInteractivePopKey";
 static NSString *const GKFullScreenPopKey  = @"GKFullScreenPopKey";
 static NSString *const GKPopMaxDistanceKey = @"GKPopMaxDistanceKey";
+static NSString *const GKNavBarAlphaKey    = @"GKNavBarAlphaKey";
 
 @implementation UIViewController (GKCategory)
 
@@ -41,21 +43,14 @@ static NSString *const GKPopMaxDistanceKey = @"GKPopMaxDistanceKey";
     objc_setAssociatedObject(self, &GKPopMaxDistanceKey, @(distance), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (GKNavigationController *)gk_navigationController {
-    UIViewController *vc = self;
-    while (vc && ![vc isKindOfClass:[GKNavigationController class]]) {
-        vc = vc.navigationController;
-    }
-    return (GKNavigationController *)vc;
+- (CGFloat)gk_navBarAlpha {
+    return [objc_getAssociatedObject(self, &GKNavBarAlphaKey) floatValue];
 }
 
-- (Class)gk_navigationBarClass {
-    return nil;
-}
-
-- (void)showTransparentNavbar {
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:[UIColor clearColor]] forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.shadowImage = [UIImage imageWithColor:[UIColor clearColor]];
+- (void)setGk_navBarAlpha:(CGFloat)gk_navBarAlpha {
+    objc_setAssociatedObject(self, &GKNavBarAlphaKey, @(gk_navBarAlpha), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    
+    [self.navigationController setNavBarAlpha:gk_navBarAlpha];
 }
 
 #pragma mark GKNavigationItemCustomProtocol
@@ -64,9 +59,59 @@ static NSString *const GKPopMaxDistanceKey = @"GKPopMaxDistanceKey";
     [btn setTitle:@"返回" forState:UIControlStateNormal];
     [btn setImage:[UIImage imageNamed:@"btn_back_white"] forState:UIControlStateNormal];
     [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    btn.titleEdgeInsets = UIEdgeInsetsMake(0, 2, 0, -2);
     [btn sizeToFit];
     
     return [[UIBarButtonItem alloc] initWithCustomView:btn];
 }
 
 @end
+
+@implementation UINavigationController (GKCategory)
+
+// 设置导航栏透明度
+- (void)setNavBarAlpha:(CGFloat)alpha {
+    UIView *barBackgroundView = [self.navigationBar.subviews objectAtIndex:0]; // _UIBarBackground
+    UIImageView *backgroundImageView = [barBackgroundView.subviews objectAtIndex:0]; // UIImageView
+    
+    if (self.navigationBar.isTranslucent) {
+        if (backgroundImageView != nil && backgroundImageView.image != nil) {
+            barBackgroundView.alpha = alpha;
+        }else {
+            UIView *backgroundEffectView = [barBackgroundView.subviews objectAtIndex:1]; // UIVisualEffectView
+            if (backgroundEffectView != nil) {
+                backgroundEffectView.alpha = alpha;
+            }
+        }
+    }else {
+        barBackgroundView.alpha = alpha;
+    }
+    // 底部分割线
+    self.navigationBar.clipsToBounds = alpha == 0.0;
+}
+
+@end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
