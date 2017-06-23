@@ -14,12 +14,6 @@
  */
 @interface GKNavigationController : UINavigationController
 
-/** 是否使用系统的返回按钮，默认NO */
-@property (nonatomic, assign) BOOL useSystemBackBarButtonItem;
-
-/** 单独导航栏是否使用根导航栏的风格，默认NO */
-@property (nonatomic, assign) BOOL useRootNavigationBarAttributes;
-
 /** 获取当前显示的控制器中的contentViewController */
 @property (nonatomic, strong, readonly) UIViewController *gk_visibleViewController;
 

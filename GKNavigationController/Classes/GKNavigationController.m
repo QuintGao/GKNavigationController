@@ -72,6 +72,22 @@ static inline UIViewController *GKUnWrapViewController(UIViewController *viewCon
     [self setupPanGesture];
 }
 
+- (UIViewController *)gk_visibleViewController {
+    return GKUnWrapViewController([super visibleViewController]);
+}
+
+- (UIViewController *)gk_topViewController {
+    return GKUnWrapViewController([super topViewController]);
+}
+
+- (NSArray<UIViewController *> *)gk_viewControllers {
+    NSMutableArray *viewControllers = [NSMutableArray new];
+    for (UIViewController *vc in [super viewControllers]) {
+        [viewControllers addObject:GKUnWrapViewController(vc)];
+    }
+    return viewControllers;
+}
+
 #pragma mark - UINavigationControllerDelegate
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
     

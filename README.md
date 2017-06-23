@@ -31,25 +31,37 @@
 
 ## 用法简介
 
-1.  初始化，提供两种方法
+1.  初始化，仍然使用系统方法
 
 ```
+层次结构
+1. 根控制器的导航控制器  GKNavigationController
+                        - GKWrapViewController
+                            - GKWrapNavigationController
+                                - 你的VC1
+                      ... push
+                        - GKWrapViewController
+                            - GKWrapNavigationController
+                                - 你的VC2
 
-+ (instancetype)gk_wrapNavigationControllerWithRootVC:(UIViewController *)rootVC;
-+ (instancetype)gk_noWrapNavigationControllerWithRootVC:(UIViewController *)rootVC;
+2. UITabBarController作为根控制器
+        UITabBarController
+            tab1
+                GKNavigationController
+                    - GKWrapViewController
+                        - GKWrapNavigationController
+                            - 你的VC1
+            tab2
+                GKNavigationController
+                    - GKWrapViewController
+                        - GKWrapNavigationController
+                            - 你的VC2
+            ...
 
 ```
 
 2. 部分属性介绍
 ```
-GKNavigationController:
-
-/** 是否使用系统的返回按钮，默认NO */
-@property (nonatomic, assign) BOOL useSystemBackBarButtonItem;
-
-/** 单独导航栏是否使用根导航栏的风格，默认NO */
-@property (nonatomic, assign) BOOL useRootNavigationBarAttributes;
-
 
 UIViewController:
 
