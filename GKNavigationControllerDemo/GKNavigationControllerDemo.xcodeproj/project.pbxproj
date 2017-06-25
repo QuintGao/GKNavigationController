@@ -17,13 +17,6 @@
 		7926477D1EFBFD8A001C12DA /* UIImage+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647741EFBFD8A001C12DA /* UIImage+GKCategory.m */; };
 		7926477E1EFBFD8A001C12DA /* UIViewController+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647761EFBFD8A001C12DA /* UIViewController+GKCategory.m */; };
 		7926477F1EFBFD8A001C12DA /* GKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647791EFBFD8A001C12DA /* GKNavigationController.m */; };
-		792647971EFBFDB6001C12DA /* GKDemo001ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647831EFBFDB6001C12DA /* GKDemo001ViewController.m */; };
-		792647981EFBFDB6001C12DA /* GKDemo002ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647851EFBFDB6001C12DA /* GKDemo002ViewController.m */; };
-		792647991EFBFDB6001C12DA /* GKDemo003ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647871EFBFDB6001C12DA /* GKDemo003ViewController.m */; };
-		7926479A1EFBFDB6001C12DA /* GKDemo004ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647891EFBFDB6001C12DA /* GKDemo004ViewController.m */; };
-		7926479B1EFBFDB6001C12DA /* GKDemo005ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926478B1EFBFDB6001C12DA /* GKDemo005ViewController.m */; };
-		7926479C1EFBFDB6001C12DA /* GKDemo006ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926478D1EFBFDB6001C12DA /* GKDemo006ViewController.m */; };
-		7926479D1EFBFDB6001C12DA /* GKDemo007ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926478F1EFBFDB6001C12DA /* GKDemo007ViewController.m */; };
 		7926479F1EFBFDB6001C12DA /* GKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647931EFBFDB6001C12DA /* GKMainViewController.m */; };
 		792647A41EFBFDFA001C12DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647A31EFBFDFA001C12DA /* AppDelegate.m */; };
 		792647A71EFBFEB3001C12DA /* UIScrollView+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647A61EFBFEB3001C12DA /* UIScrollView+GKCategory.m */; };
@@ -31,7 +24,20 @@
 		792647C41EFCBE25001C12DA /* GKWrapNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647C31EFCBE25001C12DA /* GKWrapNavigationController.m */; };
 		792647C71EFCC583001C12DA /* UIViewController+GKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647C61EFCC583001C12DA /* UIViewController+GKNavigationController.m */; };
 		792647CB1EFD2F42001C12DA /* GKFullScreenPanGestureRecognizerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647CA1EFD2F42001C12DA /* GKFullScreenPanGestureRecognizerDelegate.m */; };
-		792647CE1EFD4DB3001C12DA /* GKDemoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647CD1EFD4DB3001C12DA /* GKDemoBaseViewController.m */; };
+		792647D11EFE7CB2001C12DA /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647D01EFE7CB2001C12DA /* UIView+Extension.m */; };
+		792647D41EFECE9E001C12DA /* UITabBarController+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647D31EFECE9E001C12DA /* UITabBarController+GKCategory.m */; };
+		792647E61EFF70DE001C12DA /* GKDemo001ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647D91EFF70DE001C12DA /* GKDemo001ViewController.m */; };
+		792647E71EFF70DE001C12DA /* GKDemo002ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647DB1EFF70DE001C12DA /* GKDemo002ViewController.m */; };
+		792647E81EFF70DE001C12DA /* GKDemo003ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647DD1EFF70DE001C12DA /* GKDemo003ViewController.m */; };
+		792647E91EFF70DE001C12DA /* GKDemo004ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647DF1EFF70DE001C12DA /* GKDemo004ViewController.m */; };
+		792647EA1EFF70DE001C12DA /* GKDemo005ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647E11EFF70DE001C12DA /* GKDemo005ViewController.m */; };
+		792647EB1EFF70DE001C12DA /* GKDemo006ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647E31EFF70DE001C12DA /* GKDemo006ViewController.m */; };
+		792647EC1EFF70DE001C12DA /* GKDemo007ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647E51EFF70DE001C12DA /* GKDemo007ViewController.m */; };
+		792647EF1EFF7133001C12DA /* GKDemoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647EE1EFF7133001C12DA /* GKDemoBaseViewController.m */; };
+		792647F21EFF7161001C12DA /* GKTabBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647F11EFF7161001C12DA /* GKTabBaseViewController.m */; };
+		792647F51EFF735B001C12DA /* GKTab001ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647F41EFF735B001C12DA /* GKTab001ViewController.m */; };
+		792647F81EFF7365001C12DA /* GKTab002ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647F71EFF7365001C12DA /* GKTab002ViewController.m */; };
+		792647FB1EFF736D001C12DA /* GKTab003ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647FA1EFF736D001C12DA /* GKTab003ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,20 +77,6 @@
 		792647761EFBFD8A001C12DA /* UIViewController+GKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GKCategory.m"; sourceTree = "<group>"; };
 		792647781EFBFD8A001C12DA /* GKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKNavigationController.h; sourceTree = "<group>"; };
 		792647791EFBFD8A001C12DA /* GKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKNavigationController.m; sourceTree = "<group>"; };
-		792647821EFBFDB6001C12DA /* GKDemo001ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo001ViewController.h; sourceTree = "<group>"; };
-		792647831EFBFDB6001C12DA /* GKDemo001ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo001ViewController.m; sourceTree = "<group>"; };
-		792647841EFBFDB6001C12DA /* GKDemo002ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo002ViewController.h; sourceTree = "<group>"; };
-		792647851EFBFDB6001C12DA /* GKDemo002ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo002ViewController.m; sourceTree = "<group>"; };
-		792647861EFBFDB6001C12DA /* GKDemo003ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo003ViewController.h; sourceTree = "<group>"; };
-		792647871EFBFDB6001C12DA /* GKDemo003ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo003ViewController.m; sourceTree = "<group>"; };
-		792647881EFBFDB6001C12DA /* GKDemo004ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo004ViewController.h; sourceTree = "<group>"; };
-		792647891EFBFDB6001C12DA /* GKDemo004ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo004ViewController.m; sourceTree = "<group>"; };
-		7926478A1EFBFDB6001C12DA /* GKDemo005ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo005ViewController.h; sourceTree = "<group>"; };
-		7926478B1EFBFDB6001C12DA /* GKDemo005ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo005ViewController.m; sourceTree = "<group>"; };
-		7926478C1EFBFDB6001C12DA /* GKDemo006ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo006ViewController.h; sourceTree = "<group>"; };
-		7926478D1EFBFDB6001C12DA /* GKDemo006ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo006ViewController.m; sourceTree = "<group>"; };
-		7926478E1EFBFDB6001C12DA /* GKDemo007ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo007ViewController.h; sourceTree = "<group>"; };
-		7926478F1EFBFDB6001C12DA /* GKDemo007ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo007ViewController.m; sourceTree = "<group>"; };
 		792647921EFBFDB6001C12DA /* GKMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKMainViewController.h; sourceTree = "<group>"; };
 		792647931EFBFDB6001C12DA /* GKMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKMainViewController.m; sourceTree = "<group>"; };
 		792647A21EFBFDFA001C12DA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,8 +91,34 @@
 		792647C61EFCC583001C12DA /* UIViewController+GKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GKNavigationController.m"; sourceTree = "<group>"; };
 		792647C91EFD2F42001C12DA /* GKFullScreenPanGestureRecognizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKFullScreenPanGestureRecognizerDelegate.h; sourceTree = "<group>"; };
 		792647CA1EFD2F42001C12DA /* GKFullScreenPanGestureRecognizerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKFullScreenPanGestureRecognizerDelegate.m; sourceTree = "<group>"; };
-		792647CC1EFD4DB3001C12DA /* GKDemoBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemoBaseViewController.h; sourceTree = "<group>"; };
-		792647CD1EFD4DB3001C12DA /* GKDemoBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemoBaseViewController.m; sourceTree = "<group>"; };
+		792647CF1EFE7CB2001C12DA /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		792647D01EFE7CB2001C12DA /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		792647D21EFECE9E001C12DA /* UITabBarController+GKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+GKCategory.h"; sourceTree = "<group>"; };
+		792647D31EFECE9E001C12DA /* UITabBarController+GKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+GKCategory.m"; sourceTree = "<group>"; };
+		792647D81EFF70DE001C12DA /* GKDemo001ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo001ViewController.h; sourceTree = "<group>"; };
+		792647D91EFF70DE001C12DA /* GKDemo001ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo001ViewController.m; sourceTree = "<group>"; };
+		792647DA1EFF70DE001C12DA /* GKDemo002ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo002ViewController.h; sourceTree = "<group>"; };
+		792647DB1EFF70DE001C12DA /* GKDemo002ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo002ViewController.m; sourceTree = "<group>"; };
+		792647DC1EFF70DE001C12DA /* GKDemo003ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo003ViewController.h; sourceTree = "<group>"; };
+		792647DD1EFF70DE001C12DA /* GKDemo003ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo003ViewController.m; sourceTree = "<group>"; };
+		792647DE1EFF70DE001C12DA /* GKDemo004ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo004ViewController.h; sourceTree = "<group>"; };
+		792647DF1EFF70DE001C12DA /* GKDemo004ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo004ViewController.m; sourceTree = "<group>"; };
+		792647E01EFF70DE001C12DA /* GKDemo005ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo005ViewController.h; sourceTree = "<group>"; };
+		792647E11EFF70DE001C12DA /* GKDemo005ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo005ViewController.m; sourceTree = "<group>"; };
+		792647E21EFF70DE001C12DA /* GKDemo006ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo006ViewController.h; sourceTree = "<group>"; };
+		792647E31EFF70DE001C12DA /* GKDemo006ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo006ViewController.m; sourceTree = "<group>"; };
+		792647E41EFF70DE001C12DA /* GKDemo007ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo007ViewController.h; sourceTree = "<group>"; };
+		792647E51EFF70DE001C12DA /* GKDemo007ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo007ViewController.m; sourceTree = "<group>"; };
+		792647ED1EFF7133001C12DA /* GKDemoBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemoBaseViewController.h; sourceTree = "<group>"; };
+		792647EE1EFF7133001C12DA /* GKDemoBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemoBaseViewController.m; sourceTree = "<group>"; };
+		792647F01EFF7161001C12DA /* GKTabBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKTabBaseViewController.h; sourceTree = "<group>"; };
+		792647F11EFF7161001C12DA /* GKTabBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKTabBaseViewController.m; sourceTree = "<group>"; };
+		792647F31EFF735B001C12DA /* GKTab001ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKTab001ViewController.h; sourceTree = "<group>"; };
+		792647F41EFF735B001C12DA /* GKTab001ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKTab001ViewController.m; sourceTree = "<group>"; };
+		792647F61EFF7365001C12DA /* GKTab002ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKTab002ViewController.h; sourceTree = "<group>"; };
+		792647F71EFF7365001C12DA /* GKTab002ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKTab002ViewController.m; sourceTree = "<group>"; };
+		792647F91EFF736D001C12DA /* GKTab003ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKTab003ViewController.h; sourceTree = "<group>"; };
+		792647FA1EFF736D001C12DA /* GKTab003ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKTab003ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +226,8 @@
 				792647A61EFBFEB3001C12DA /* UIScrollView+GKCategory.m */,
 				792647751EFBFD8A001C12DA /* UIViewController+GKCategory.h */,
 				792647761EFBFD8A001C12DA /* UIViewController+GKCategory.m */,
+				792647D21EFECE9E001C12DA /* UITabBarController+GKCategory.h */,
+				792647D31EFECE9E001C12DA /* UITabBarController+GKCategory.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -237,22 +257,11 @@
 			children = (
 				792647921EFBFDB6001C12DA /* GKMainViewController.h */,
 				792647931EFBFDB6001C12DA /* GKMainViewController.m */,
-				792647CC1EFD4DB3001C12DA /* GKDemoBaseViewController.h */,
-				792647CD1EFD4DB3001C12DA /* GKDemoBaseViewController.m */,
-				792647821EFBFDB6001C12DA /* GKDemo001ViewController.h */,
-				792647831EFBFDB6001C12DA /* GKDemo001ViewController.m */,
-				792647841EFBFDB6001C12DA /* GKDemo002ViewController.h */,
-				792647851EFBFDB6001C12DA /* GKDemo002ViewController.m */,
-				792647861EFBFDB6001C12DA /* GKDemo003ViewController.h */,
-				792647871EFBFDB6001C12DA /* GKDemo003ViewController.m */,
-				792647881EFBFDB6001C12DA /* GKDemo004ViewController.h */,
-				792647891EFBFDB6001C12DA /* GKDemo004ViewController.m */,
-				7926478A1EFBFDB6001C12DA /* GKDemo005ViewController.h */,
-				7926478B1EFBFDB6001C12DA /* GKDemo005ViewController.m */,
-				7926478C1EFBFDB6001C12DA /* GKDemo006ViewController.h */,
-				7926478D1EFBFDB6001C12DA /* GKDemo006ViewController.m */,
-				7926478E1EFBFDB6001C12DA /* GKDemo007ViewController.h */,
-				7926478F1EFBFDB6001C12DA /* GKDemo007ViewController.m */,
+				792647D51EFF7066001C12DA /* BaseVC */,
+				792647D61EFF70BB001C12DA /* DemoVC */,
+				792647D71EFF70BB001C12DA /* TabVC */,
+				792647CF1EFE7CB2001C12DA /* UIView+Extension.h */,
+				792647D01EFE7CB2001C12DA /* UIView+Extension.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -286,6 +295,51 @@
 				792647CA1EFD2F42001C12DA /* GKFullScreenPanGestureRecognizerDelegate.m */,
 			);
 			path = GKPanGestureHandler;
+			sourceTree = "<group>";
+		};
+		792647D51EFF7066001C12DA /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				792647ED1EFF7133001C12DA /* GKDemoBaseViewController.h */,
+				792647EE1EFF7133001C12DA /* GKDemoBaseViewController.m */,
+				792647F01EFF7161001C12DA /* GKTabBaseViewController.h */,
+				792647F11EFF7161001C12DA /* GKTabBaseViewController.m */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		792647D61EFF70BB001C12DA /* DemoVC */ = {
+			isa = PBXGroup;
+			children = (
+				792647D81EFF70DE001C12DA /* GKDemo001ViewController.h */,
+				792647D91EFF70DE001C12DA /* GKDemo001ViewController.m */,
+				792647DA1EFF70DE001C12DA /* GKDemo002ViewController.h */,
+				792647DB1EFF70DE001C12DA /* GKDemo002ViewController.m */,
+				792647DC1EFF70DE001C12DA /* GKDemo003ViewController.h */,
+				792647DD1EFF70DE001C12DA /* GKDemo003ViewController.m */,
+				792647DE1EFF70DE001C12DA /* GKDemo004ViewController.h */,
+				792647DF1EFF70DE001C12DA /* GKDemo004ViewController.m */,
+				792647E01EFF70DE001C12DA /* GKDemo005ViewController.h */,
+				792647E11EFF70DE001C12DA /* GKDemo005ViewController.m */,
+				792647E21EFF70DE001C12DA /* GKDemo006ViewController.h */,
+				792647E31EFF70DE001C12DA /* GKDemo006ViewController.m */,
+				792647E41EFF70DE001C12DA /* GKDemo007ViewController.h */,
+				792647E51EFF70DE001C12DA /* GKDemo007ViewController.m */,
+			);
+			path = DemoVC;
+			sourceTree = "<group>";
+		};
+		792647D71EFF70BB001C12DA /* TabVC */ = {
+			isa = PBXGroup;
+			children = (
+				792647F31EFF735B001C12DA /* GKTab001ViewController.h */,
+				792647F41EFF735B001C12DA /* GKTab001ViewController.m */,
+				792647F61EFF7365001C12DA /* GKTab002ViewController.h */,
+				792647F71EFF7365001C12DA /* GKTab002ViewController.m */,
+				792647F91EFF736D001C12DA /* GKTab003ViewController.h */,
+				792647FA1EFF736D001C12DA /* GKTab003ViewController.m */,
+			);
+			path = TabVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +409,7 @@
 				TargetAttributes = {
 					792647361EFBFD6B001C12DA = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 9J2ZLU6Z7U;
 						ProvisioningStyle = Manual;
 					};
 					7926474F1EFBFD6B001C12DA = {
@@ -425,24 +480,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				7926477F1EFBFD8A001C12DA /* GKNavigationController.m in Sources */,
-				792647CE1EFD4DB3001C12DA /* GKDemoBaseViewController.m in Sources */,
-				792647971EFBFDB6001C12DA /* GKDemo001ViewController.m in Sources */,
-				792647981EFBFDB6001C12DA /* GKDemo002ViewController.m in Sources */,
-				792647991EFBFDB6001C12DA /* GKDemo003ViewController.m in Sources */,
-				7926479C1EFBFDB6001C12DA /* GKDemo006ViewController.m in Sources */,
+				792647F51EFF735B001C12DA /* GKTab001ViewController.m in Sources */,
+				792647F21EFF7161001C12DA /* GKTabBaseViewController.m in Sources */,
+				792647E61EFF70DE001C12DA /* GKDemo001ViewController.m in Sources */,
 				7926479F1EFBFDB6001C12DA /* GKMainViewController.m in Sources */,
+				792647FB1EFF736D001C12DA /* GKTab003ViewController.m in Sources */,
 				792647A71EFBFEB3001C12DA /* UIScrollView+GKCategory.m in Sources */,
 				792647CB1EFD2F42001C12DA /* GKFullScreenPanGestureRecognizerDelegate.m in Sources */,
-				7926479A1EFBFDB6001C12DA /* GKDemo004ViewController.m in Sources */,
-				7926479D1EFBFDB6001C12DA /* GKDemo007ViewController.m in Sources */,
+				792647EC1EFF70DE001C12DA /* GKDemo007ViewController.m in Sources */,
+				792647D11EFE7CB2001C12DA /* UIView+Extension.m in Sources */,
 				792647C41EFCBE25001C12DA /* GKWrapNavigationController.m in Sources */,
+				792647E91EFF70DE001C12DA /* GKDemo004ViewController.m in Sources */,
+				792647D41EFECE9E001C12DA /* UITabBarController+GKCategory.m in Sources */,
 				7926473C1EFBFD6B001C12DA /* main.m in Sources */,
+				792647EB1EFF70DE001C12DA /* GKDemo006ViewController.m in Sources */,
 				7926477E1EFBFD8A001C12DA /* UIViewController+GKCategory.m in Sources */,
 				792647C11EFCBE10001C12DA /* GKWrapViewController.m in Sources */,
 				792647C71EFCC583001C12DA /* UIViewController+GKNavigationController.m in Sources */,
 				792647A41EFBFDFA001C12DA /* AppDelegate.m in Sources */,
+				792647E81EFF70DE001C12DA /* GKDemo003ViewController.m in Sources */,
+				792647E71EFF70DE001C12DA /* GKDemo002ViewController.m in Sources */,
+				792647EF1EFF7133001C12DA /* GKDemoBaseViewController.m in Sources */,
+				792647F81EFF7365001C12DA /* GKTab002ViewController.m in Sources */,
 				7926477D1EFBFD8A001C12DA /* UIImage+GKCategory.m in Sources */,
-				7926479B1EFBFDB6001C12DA /* GKDemo005ViewController.m in Sources */,
+				792647EA1EFF70DE001C12DA /* GKDemo005ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,13 +644,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: peng wang (JNZTAA68SK)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: peng wang (JNZTAA68SK)";
+				DEVELOPMENT_TEAM = 9J2ZLU6Z7U;
 				INFOPLIST_FILE = GKNavigationControllerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maserati.swift.GKNavigationControllerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jvtalking.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "ccbba57f-97f6-4ffe-9154-b8a209a7d9cd";
+				PROVISIONING_PROFILE_SPECIFIER = "jvtalking___test";
 			};
 			name = Debug;
 		};
@@ -597,13 +661,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: peng wang (JNZTAA68SK)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: peng wang (JNZTAA68SK)";
+				DEVELOPMENT_TEAM = 9J2ZLU6Z7U;
 				INFOPLIST_FILE = GKNavigationControllerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maserati.swift.GKNavigationControllerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jvtalking.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "ccbba57f-97f6-4ffe-9154-b8a209a7d9cd";
+				PROVISIONING_PROFILE_SPECIFIER = "jvtalking___test";
 			};
 			name = Release;
 		};

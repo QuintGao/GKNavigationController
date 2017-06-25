@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIView+Extension.h"
 
 @interface GKDemoBaseViewController : UIViewController
-
-- (void)showBackBtn;
 
 @end

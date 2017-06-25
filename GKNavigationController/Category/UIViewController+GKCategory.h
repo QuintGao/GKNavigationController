@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString *const GKViewControllerPropertyChangedNotification;
+
 @class GKNavigationController, GKWrapViewController;
 
 @protocol GKNavigationItemCustomProtocol <NSObject>

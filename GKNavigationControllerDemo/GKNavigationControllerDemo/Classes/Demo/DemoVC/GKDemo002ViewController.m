@@ -18,45 +18,36 @@
 
 @implementation GKDemo002ViewController
 
+- (void)loadView {
+    [super loadView];
+    
+    self.scrollView = [[UIScrollView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.scrollView.delegate = self;
+    self.scrollView.backgroundColor = [UIColor blackColor];
+    self.scrollView.contentSize = CGSizeMake(0, [UIScreen mainScreen].bounds.size.height + 200);
+    
+    self.view = self.scrollView;
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
     
+    self.navigationController.navigationBar.barTintColor = [UIColor brownColor];
     self.gk_navBarAlpha = 0.0;
     
     self.navigationItem.title = @"控制器002";
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
-    self.scrollView.backgroundColor = [UIColor darkGrayColor];
-    self.scrollView.contentSize = CGSizeMake(0, self.view.frame.size.height + 200);
-    self.scrollView.delegate = self;
-    [self.view addSubview:self.scrollView];
-    
-    // 禁用滑动返回
-    self.gk_interactivePopDisabled = YES;
-    
     UIButton *btn = [UIButton new];
-    btn.frame = CGRectMake(100, 100, 60, 20);
+    btn.frame = CGRectMake(100, 400, 60, 20);
     btn.backgroundColor = [UIColor blackColor];
     [btn setTitle:@"Push" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
-    
-    UILabel *label = [UILabel new];
-    label.text = @"我是透明导航栏控制器，我禁用了滑动返回手势，我还实现了导航栏渐变效果哦";
-    label.font = [UIFont systemFontOfSize:16];
-    label.numberOfLines = 0;
-    label.frame = CGRectMake(0, 200, self.view.frame.size.width, 0);
-    [label sizeToFit];
-    label.textAlignment = NSTextAlignmentCenter;
-    [self.view addSubview:label];
-    
-    if (self.tabBarController.navigationController) {
-        [self showBackBtn];
-    }
 }
 
 - (void)btnAction {
@@ -84,8 +75,6 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     CGFloat contentY = scrollView.contentOffset.y;
     
-    NSLog(@"%f", contentY);
-    
     if (contentY <= 0) {
         self.gk_navBarAlpha = 0;
         return;
@@ -99,13 +88,6 @@
     }else {
         self.gk_navBarAlpha = 1.0;
     }
-    
-    
-    
-    
-    
-    
-    
 }
 
 @end

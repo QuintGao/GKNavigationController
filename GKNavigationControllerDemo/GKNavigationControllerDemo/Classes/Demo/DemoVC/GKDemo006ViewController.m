@@ -21,6 +21,7 @@
     [super viewDidLoad];
     
     self.navigationItem.title = @"UITableView";
+    self.navigationController.navigationBar.barTintColor = [UIColor orangeColor];
     
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
     

@@ -84,6 +84,8 @@ static inline UIViewController *GKUnWrapViewController(UIViewController *viewCon
     
     // 记录系统返回手势的target
     self.popGestureTarget = self.interactivePopGestureRecognizer.delegate;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(viewControllerPropertyChanged:) name:GKViewControllerPropertyChangedNotification object:nil];
 }
 
 - (UIViewController *)gk_visibleViewController {
@@ -100,6 +102,15 @@ static inline UIViewController *GKUnWrapViewController(UIViewController *viewCon
         [viewControllers addObject:GKUnWrapViewController(vc)];
     }
     return viewControllers;
+}
+
+#pragma mark - Notification
+- (void)viewControllerPropertyChanged:(NSNotification *)notify {
+//    UIViewController *topViewController = self.topViewController;
+    
+    UIViewController *vc = (UIViewController *)notify.object[@"viewController"];
+    
+    [self handlePopGestureRecognizer:vc];
 }
 
 #pragma mark - UINavigationControllerDelegate

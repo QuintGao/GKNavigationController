@@ -8,10 +8,9 @@
 
 #import "GKDemo004ViewController.h"
 #import "GKNavigationController.h"
-#import "GKDemo001ViewController.h"
-#import "GKDemo002ViewController.h"
-#import "GKDemo003ViewController.h"
-#import "GKWrapNavigationController.h"
+#import "GKTab001ViewController.h"
+#import "GKTab002ViewController.h"
+#import "GKTab003ViewController.h"
 
 @interface GKDemo004ViewController ()<UITabBarControllerDelegate>
 
@@ -25,9 +24,9 @@
     self.tabBar.tintColor = [UIColor redColor];
     self.delegate = self;
     
-    [self addChildVC:[GKDemo001ViewController new] title:@"首页" imageName:@"Home"];
-    [self addChildVC:[GKDemo002ViewController new] title:@"活动" imageName:@"Activity"];
-    [self addChildVC:[GKDemo003ViewController new] title:@"我的" imageName:@"Mine"];
+    [self addChildVC:[GKTab001ViewController new] title:@"首页" imageName:@"Home"];
+    [self addChildVC:[GKTab002ViewController new] title:@"活动" imageName:@"Activity"];
+    [self addChildVC:[GKTab003ViewController new] title:@"我的" imageName:@"Mine"];
 }
 
 - (void)addChildVC:(UIViewController *)vc title:(NSString *)title imageName:(NSString *)name {
