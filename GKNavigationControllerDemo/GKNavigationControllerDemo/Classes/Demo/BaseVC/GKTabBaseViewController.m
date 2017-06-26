@@ -8,6 +8,7 @@
 
 #import "GKTabBaseViewController.h"
 #import "UIView+Extension.h"
+#import "GKDemo005ViewController.h"
 
 @interface GKTabBaseViewController ()
 
@@ -58,7 +59,12 @@
 }
 
 - (void)btnClick:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+    
+    if ([self.tabBarController isKindOfClass:[GKDemo005ViewController class]]) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }else {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 - (void)pushAction{}

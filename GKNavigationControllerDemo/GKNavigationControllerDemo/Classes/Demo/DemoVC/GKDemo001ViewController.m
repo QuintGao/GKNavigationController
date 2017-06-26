@@ -35,6 +35,12 @@
     [self.view addSubview:btn];
 }
 
+#pragma mark - GKNavigationPushDelegate
+- (void)pushToNext {
+    GKDemo002ViewController *demo002VC = [GKDemo002ViewController new];
+    [self.navigationController pushViewController:demo002VC animated:YES];
+}
+
 - (void)dismiss {
     if ([self.tabBarController isKindOfClass:[GKDemo005ViewController class]]) {
         [self dismissViewControllerAnimated:YES completion:nil];

@@ -148,9 +148,11 @@ static inline UIViewController *GKUnWrapViewController(UIViewController *viewCon
 }
 
 - (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController {
+    
     if ([self.gk_delegate respondsToSelector:@selector(navigationController:interactionControllerForAnimationController:)]) {
         [self.gk_delegate navigationController:navigationController interactionControllerForAnimationController:animationController];
     }
+    
     return nil;
 }
 
@@ -161,6 +163,7 @@ static inline UIViewController *GKUnWrapViewController(UIViewController *viewCon
     if ([self.gk_delegate respondsToSelector:@selector(navigationController:animationControllerForOperation:fromViewController:toViewController:)]) {
         return [self.gk_delegate navigationController:navigationController animationControllerForOperation:operation fromViewController:fromVC toViewController:toVC];
     }
+    
     return nil;
 }
 

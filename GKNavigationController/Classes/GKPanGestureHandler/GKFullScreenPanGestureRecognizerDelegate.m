@@ -14,7 +14,7 @@
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
     // 获取当前控制器的导航栏的最顶层控制器的内容控制器
     UIViewController *topContentViewController = self.navigationController.gk_topViewController;
-    NSLog(@"%@-----%d", topContentViewController, topContentViewController.gk_interactivePopDisabled);
+//    NSLog(@"%@-----%d", topContentViewController, topContentViewController.gk_interactivePopDisabled);
     // 获取系统手势的action
     SEL action = NSSelectorFromString(@"handleNavigationTransition:");
     
@@ -32,6 +32,7 @@
         CGPoint velocity = [panGesture velocityInView:panGesture.view];
         if (velocity.x < 0) {  // 向左滑动push操作
             NSLog(@"%@", @"暂不做处理");
+            
             return NO;
         }else {  // 向右滑动pop操作，使用系统的pop方法
             // 首先处理禁止pop的操作--控制器设置的最大滑动距离

@@ -25,7 +25,6 @@
 		792647C71EFCC583001C12DA /* UIViewController+GKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647C61EFCC583001C12DA /* UIViewController+GKNavigationController.m */; };
 		792647CB1EFD2F42001C12DA /* GKFullScreenPanGestureRecognizerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647CA1EFD2F42001C12DA /* GKFullScreenPanGestureRecognizerDelegate.m */; };
 		792647D11EFE7CB2001C12DA /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647D01EFE7CB2001C12DA /* UIView+Extension.m */; };
-		792647D41EFECE9E001C12DA /* UITabBarController+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647D31EFECE9E001C12DA /* UITabBarController+GKCategory.m */; };
 		792647E61EFF70DE001C12DA /* GKDemo001ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647D91EFF70DE001C12DA /* GKDemo001ViewController.m */; };
 		792647E71EFF70DE001C12DA /* GKDemo002ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647DB1EFF70DE001C12DA /* GKDemo002ViewController.m */; };
 		792647E81EFF70DE001C12DA /* GKDemo003ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647DD1EFF70DE001C12DA /* GKDemo003ViewController.m */; };
@@ -93,8 +92,6 @@
 		792647CA1EFD2F42001C12DA /* GKFullScreenPanGestureRecognizerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKFullScreenPanGestureRecognizerDelegate.m; sourceTree = "<group>"; };
 		792647CF1EFE7CB2001C12DA /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		792647D01EFE7CB2001C12DA /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		792647D21EFECE9E001C12DA /* UITabBarController+GKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+GKCategory.h"; sourceTree = "<group>"; };
-		792647D31EFECE9E001C12DA /* UITabBarController+GKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+GKCategory.m"; sourceTree = "<group>"; };
 		792647D81EFF70DE001C12DA /* GKDemo001ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo001ViewController.h; sourceTree = "<group>"; };
 		792647D91EFF70DE001C12DA /* GKDemo001ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDemo001ViewController.m; sourceTree = "<group>"; };
 		792647DA1EFF70DE001C12DA /* GKDemo002ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDemo002ViewController.h; sourceTree = "<group>"; };
@@ -226,8 +223,6 @@
 				792647A61EFBFEB3001C12DA /* UIScrollView+GKCategory.m */,
 				792647751EFBFD8A001C12DA /* UIViewController+GKCategory.h */,
 				792647761EFBFD8A001C12DA /* UIViewController+GKCategory.m */,
-				792647D21EFECE9E001C12DA /* UITabBarController+GKCategory.h */,
-				792647D31EFECE9E001C12DA /* UITabBarController+GKCategory.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -491,7 +486,6 @@
 				792647D11EFE7CB2001C12DA /* UIView+Extension.m in Sources */,
 				792647C41EFCBE25001C12DA /* GKWrapNavigationController.m in Sources */,
 				792647E91EFF70DE001C12DA /* GKDemo004ViewController.m in Sources */,
-				792647D41EFECE9E001C12DA /* UITabBarController+GKCategory.m in Sources */,
 				7926473C1EFBFD6B001C12DA /* main.m in Sources */,
 				792647EB1EFF70DE001C12DA /* GKDemo006ViewController.m in Sources */,
 				7926477E1EFBFD8A001C12DA /* UIViewController+GKCategory.m in Sources */,

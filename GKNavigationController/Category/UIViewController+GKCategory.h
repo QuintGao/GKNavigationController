@@ -20,7 +20,15 @@ extern NSString *const GKViewControllerPropertyChangedNotification;
 
 @end
 
-@interface UIViewController (GKCategory)<GKNavigationItemCustomProtocol>
+@protocol GKNavigationPushDelegate <NSObject>
+
+@optional
+
+- (void)pushToNext;
+
+@end
+
+@interface UIViewController (GKCategory)<GKNavigationItemCustomProtocol, GKNavigationPushDelegate>
 
 /** 是否禁止当前控制器的滑动返回(包括全屏返回和边缘返回) */
 @property (nonatomic, assign) BOOL gk_interactivePopDisabled;

@@ -54,6 +54,7 @@ static NSString *const GKNavBarAlphaKey    = @"GKNavBarAlphaKey";
     [[NSNotificationCenter defaultCenter] postNotificationName:GKViewControllerPropertyChangedNotification object:@{@"viewController": self}];
 }
 
+
 - (CGFloat)gk_navBarAlpha {
     return [objc_getAssociatedObject(self, &GKNavBarAlphaKey) floatValue];
 }
