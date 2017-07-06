@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "https://github.com/QuintGao"
   s.platform     = :ios, "6.0"
   s.ios.deployment_target = "6.0"
-  s.source       = { :git => "https://github.com/QuintGao/GKNavigationController.git", :tag => {s.version.to_s} }
+  s.source       = { :git => "https://github.com/QuintGao/GKNavigationController.git", :tag => s.version.to_s }
   s.source_files  = "GKNavigationController/**/*.{h,m}"
   s.public_header_files = "GKNavigationController/**/*.h"
   s.resource  = "GKNavigationController/Resources"
