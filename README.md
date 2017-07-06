@@ -86,13 +86,14 @@ UIViewController:
 - (UIBarButtonItem *)gk_customBackItemWithTarget:(id)target action:(SEL)action;
 
 ```
-如果你push到的是一个UITabBarController，你需要在每个分栏的root控制器中重写定义返回按钮
+如果你push到的是一个UITabBarController，你需要在每个分栏的root控制器中重新定义返回按钮
 ```
 self.navigationItem.leftBarButtonItem = ...
 ```
 
-## Cocoapods
-暂未支持
+## Cocoapods(已支持)
+
+pod 'GKNavigationController'
 
 ## 缺陷及不足
 * 没有支持自定义转场，实现如：今日头条、腾讯新闻等的转场效果
@@ -103,3 +104,4 @@ self.navigationItem.leftBarButtonItem = ...
 * 2017.6.22 首次提交，发布
 * 2017.6.23 部分内容修改，完善
 * 2017.6.26 修复单个控制器不能设置手势返回、全屏返回、滑动区域的bug
+* 2017.7.6  支持cocoapods
