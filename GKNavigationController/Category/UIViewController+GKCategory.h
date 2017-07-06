@@ -12,23 +12,7 @@ extern NSString *const GKViewControllerPropertyChangedNotification;
 
 @class GKNavigationController, GKWrapViewController;
 
-@protocol GKNavigationItemCustomProtocol <NSObject>
-
-@optional
-
-- (UIBarButtonItem *)gk_customBackItemWithTarget:(id)target action:(SEL)action;
-
-@end
-
-@protocol GKNavigationPushDelegate <NSObject>
-
-@optional
-
-- (void)pushToNext;
-
-@end
-
-@interface UIViewController (GKCategory)<GKNavigationItemCustomProtocol, GKNavigationPushDelegate>
+@interface UIViewController (GKCategory)
 
 /** 是否禁止当前控制器的滑动返回(包括全屏返回和边缘返回) */
 @property (nonatomic, assign) BOOL gk_interactivePopDisabled;
@@ -42,6 +26,8 @@ extern NSString *const GKViewControllerPropertyChangedNotification;
 /** 设置导航栏的透明度 */
 @property (nonatomic, assign) CGFloat gk_navBarAlpha;
 
+// 自定义返回item
+- (UIBarButtonItem *)gk_customBackItemWithTarget:(id)target action:(SEL)action;
 
 @end
 

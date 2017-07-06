@@ -14,41 +14,41 @@
 
 NSString *const GKViewControllerPropertyChangedNotification = @"GKViewControllerPropertyChangedNotification";
 
-static NSString *const GKInteractivePopKey = @"GKInteractivePopKey";
-static NSString *const GKFullScreenPopKey  = @"GKFullScreenPopKey";
-static NSString *const GKPopMaxDistanceKey = @"GKPopMaxDistanceKey";
-static NSString *const GKNavBarAlphaKey    = @"GKNavBarAlphaKey";
+static const void* GKInteractivePopKey = @"GKInteractivePopKey";
+static const void* GKFullScreenPopKey  = @"GKFullScreenPopKey";
+static const void* GKPopMaxDistanceKey = @"GKPopMaxDistanceKey";
+static const void* GKNavBarAlphaKey    = @"GKNavBarAlphaKey";
 
 @implementation UIViewController (GKCategory)
 
 - (BOOL)gk_interactivePopDisabled {
-    return [objc_getAssociatedObject(self, &GKInteractivePopKey) boolValue];
+    return [objc_getAssociatedObject(self, GKInteractivePopKey) boolValue];
 }
 
 - (void)setGk_interactivePopDisabled:(BOOL)disabled {
-    objc_setAssociatedObject(self, &GKInteractivePopKey, @(disabled), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, GKInteractivePopKey, @(disabled), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
     // 当属性改变是，发送通知，告诉GKNavigationController，让其做出相应处理
     [[NSNotificationCenter defaultCenter] postNotificationName:GKViewControllerPropertyChangedNotification object:@{@"viewController": self}];
 }
 
 - (BOOL)gk_fullScreenPopDisabled {
-    return [objc_getAssociatedObject(self, &GKFullScreenPopKey) boolValue];
+    return [objc_getAssociatedObject(self, GKFullScreenPopKey) boolValue];
 }
 
 - (void)setGk_fullScreenPopDisabled:(BOOL)disabled {
-    objc_setAssociatedObject(self, &GKFullScreenPopKey, @(disabled), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, GKFullScreenPopKey, @(disabled), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
     // 当属性改变是，发送通知，告诉GKNavigationController，让其做出相应处理
     [[NSNotificationCenter defaultCenter] postNotificationName:GKViewControllerPropertyChangedNotification object:@{@"viewController": self}];
 }
 
 - (CGFloat)gk_popMaxAllowedDistanceToLeftEdge {
-    return [objc_getAssociatedObject(self, &GKPopMaxDistanceKey) floatValue];
+    return [objc_getAssociatedObject(self, GKPopMaxDistanceKey) floatValue];
 }
 
 - (void)setGk_popMaxAllowedDistanceToLeftEdge:(CGFloat)distance {
-    objc_setAssociatedObject(self, &GKPopMaxDistanceKey, @(distance), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, GKPopMaxDistanceKey, @(distance), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
     // 当属性改变是，发送通知，告诉GKNavigationController，让其做出相应处理
     [[NSNotificationCenter defaultCenter] postNotificationName:GKViewControllerPropertyChangedNotification object:@{@"viewController": self}];
@@ -56,16 +56,16 @@ static NSString *const GKNavBarAlphaKey    = @"GKNavBarAlphaKey";
 
 
 - (CGFloat)gk_navBarAlpha {
-    return [objc_getAssociatedObject(self, &GKNavBarAlphaKey) floatValue];
+    return [objc_getAssociatedObject(self, GKNavBarAlphaKey) floatValue];
 }
 
 - (void)setGk_navBarAlpha:(CGFloat)gk_navBarAlpha {
-    objc_setAssociatedObject(self, &GKNavBarAlphaKey, @(gk_navBarAlpha), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, GKNavBarAlphaKey, @(gk_navBarAlpha), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
     [self.navigationController setNavBarAlpha:gk_navBarAlpha];
 }
 
-#pragma mark GKNavigationItemCustomProtocol
+// 自定义返回item
 - (UIBarButtonItem *)gk_customBackItemWithTarget:(id)target action:(SEL)action {
     UIButton *btn = [UIButton new];
     [btn setTitle:@"返回" forState:UIControlStateNormal];
@@ -103,27 +103,3 @@ static NSString *const GKNavBarAlphaKey    = @"GKNavBarAlphaKey";
 }
 
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

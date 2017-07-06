@@ -45,6 +45,7 @@
     // push一个包装后的控制器
     GKWrapViewController *wrapViewController = [GKWrapViewController wrapViewControllerWithViewController:viewController];
     viewController.gk_wrapViewController = wrapViewController;
+    
     if ([viewController respondsToSelector:@selector(gk_customBackItemWithTarget:action:)]) {
         viewController.navigationItem.leftBarButtonItem = [viewController gk_customBackItemWithTarget:self action:@selector(backAction:)];
     }else {
@@ -88,36 +89,3 @@
 }
 
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
