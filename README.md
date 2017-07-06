@@ -79,6 +79,18 @@ UIViewController:
 
 ```
 
+3. 关于返回Item
+
+如果你不想用我写的返回item，你可以在当前控制器或者基类控制器中重写下面的方法：
+```
+- (UIBarButtonItem *)gk_customBackItemWithTarget:(id)target action:(SEL)action;
+
+```
+如果你push到的是一个UITabBarController，你需要在每个分栏的root控制器中重写定义返回按钮
+```
+self.navigationItem.leftBarButtonItem = ...
+```
+
 ## Cocoapods
 暂未支持
 
