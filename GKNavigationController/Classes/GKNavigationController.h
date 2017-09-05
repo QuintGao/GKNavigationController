@@ -23,4 +23,7 @@
 /** 获取所有的contentViewController */
 @property (nonatomic, strong, readonly) NSArray <__kindof UIViewController *> *gk_viewControllers;
 
+/** 移除栈中的某个控制器（contentViewController） */
+- (void)removeViewControllerWithClass:(Class)className;
+
 @end

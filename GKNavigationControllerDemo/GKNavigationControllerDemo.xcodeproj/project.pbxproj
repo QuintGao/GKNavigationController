@@ -37,6 +37,9 @@
 		7926499A1F0E5884001C12DA /* UIImage+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 792649951F0E5884001C12DA /* UIImage+GKCategory.m */; };
 		7926499B1F0E5884001C12DA /* UIScrollView+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 792649971F0E5884001C12DA /* UIScrollView+GKCategory.m */; };
 		7926499C1F0E5884001C12DA /* UIViewController+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 792649991F0E5884001C12DA /* UIViewController+GKCategory.m */; };
+		794B86091F5E94C500F150DC /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 794B86081F5E94C500F150DC /* AViewController.m */; };
+		794B860C1F5E94CC00F150DC /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 794B860B1F5E94CC00F150DC /* BViewController.m */; };
+		794B860F1F5E94D400F150DC /* CViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 794B860E1F5E94D400F150DC /* CViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +119,12 @@
 		792649971F0E5884001C12DA /* UIScrollView+GKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+GKCategory.m"; sourceTree = "<group>"; };
 		792649981F0E5884001C12DA /* UIViewController+GKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GKCategory.h"; sourceTree = "<group>"; };
 		792649991F0E5884001C12DA /* UIViewController+GKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GKCategory.m"; sourceTree = "<group>"; };
+		794B86071F5E94C500F150DC /* AViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
+		794B86081F5E94C500F150DC /* AViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
+		794B860A1F5E94CC00F150DC /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		794B860B1F5E94CC00F150DC /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
+		794B860D1F5E94D400F150DC /* CViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CViewController.h; sourceTree = "<group>"; };
+		794B860E1F5E94D400F150DC /* CViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +245,7 @@
 		792647811EFBFDB6001C12DA /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				794B86061F5E94A800F150DC /* Test */,
 				792647921EFBFDB6001C12DA /* GKMainViewController.h */,
 				792647931EFBFDB6001C12DA /* GKMainViewController.m */,
 				792647D51EFF7066001C12DA /* BaseVC */,
@@ -343,6 +353,19 @@
 				792649991F0E5884001C12DA /* UIViewController+GKCategory.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		794B86061F5E94A800F150DC /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				794B86071F5E94C500F150DC /* AViewController.h */,
+				794B86081F5E94C500F150DC /* AViewController.m */,
+				794B860A1F5E94CC00F150DC /* BViewController.h */,
+				794B860B1F5E94CC00F150DC /* BViewController.m */,
+				794B860D1F5E94D400F150DC /* CViewController.h */,
+				794B860E1F5E94D400F150DC /* CViewController.m */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -498,10 +521,13 @@
 				7926473C1EFBFD6B001C12DA /* main.m in Sources */,
 				792647EB1EFF70DE001C12DA /* GKDemo006ViewController.m in Sources */,
 				7926499A1F0E5884001C12DA /* UIImage+GKCategory.m in Sources */,
+				794B86091F5E94C500F150DC /* AViewController.m in Sources */,
 				792647C11EFCBE10001C12DA /* GKWrapViewController.m in Sources */,
 				792647C71EFCC583001C12DA /* UIViewController+GKNavigationController.m in Sources */,
 				792647A41EFBFDFA001C12DA /* AppDelegate.m in Sources */,
+				794B860F1F5E94D400F150DC /* CViewController.m in Sources */,
 				792647E81EFF70DE001C12DA /* GKDemo003ViewController.m in Sources */,
+				794B860C1F5E94CC00F150DC /* BViewController.m in Sources */,
 				792647E71EFF70DE001C12DA /* GKDemo002ViewController.m in Sources */,
 				792647EF1EFF7133001C12DA /* GKDemoBaseViewController.m in Sources */,
 				792647F81EFF7365001C12DA /* GKTab002ViewController.m in Sources */,

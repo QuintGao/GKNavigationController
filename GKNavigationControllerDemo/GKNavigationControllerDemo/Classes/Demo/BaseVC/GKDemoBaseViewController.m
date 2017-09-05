@@ -31,6 +31,16 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    if ([self.navigationController.navigationController isKindOfClass:[GKNavigationController class]]) {
+        GKNavigationController *nav = (GKNavigationController *)self.navigationController.navigationController;
+        
+        NSLog(@"%@", nav.gk_viewControllers);
+    }
+}
+
 - (void)setupUI {
     UILabel *label1 = [UILabel new];
     label1.textColor = [UIColor blackColor];

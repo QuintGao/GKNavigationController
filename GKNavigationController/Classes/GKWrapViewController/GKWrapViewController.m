@@ -52,6 +52,21 @@ static NSValue *gk_wrapTabBarRectValue;
     self.wrapNavigationController.view.frame = self.view.bounds;
 }
 
+- (void)dealloc {
+    [self.wrapNavigationController removeFromParentViewController];
+    self.wrapNavigationController = nil;
+}
+
+- (void)didMoveToParentViewController:(UIViewController *)parent {
+    NSLog(@"%@", parent);
+    
+    if (parent == nil) {
+        
+        [self.wrapNavigationController removeFromParentViewController];
+        self.wrapNavigationController = nil;
+    }
+}
+
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     

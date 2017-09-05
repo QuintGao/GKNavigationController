@@ -104,6 +104,18 @@ static inline UIViewController *GKUnWrapViewController(UIViewController *viewCon
     return viewControllers;
 }
 
+- (void)removeViewControllerWithClass:(Class)className {
+    [self.gk_viewControllers enumerateObjectsUsingBlock:^(__kindof UIViewController * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj isKindOfClass:className]) {
+            NSMutableArray *viewControllers = [NSMutableArray arrayWithArray:self.viewControllers];
+            
+            [viewControllers removeObjectAtIndex:idx];
+            
+            self.viewControllers = viewControllers;
+        }
+    }];
+}
+
 #pragma mark - Notification
 - (void)viewControllerPropertyChanged:(NSNotification *)notify {
 //    UIViewController *topViewController = self.topViewController;
@@ -111,6 +123,11 @@ static inline UIViewController *GKUnWrapViewController(UIViewController *viewCon
     UIViewController *vc = (UIViewController *)notify.object[@"viewController"];
     
     [self handlePopGestureRecognizer:vc];
+}
+
+- (UIViewController *)popViewControllerAnimated:(BOOL)animated {
+        
+    return [super popViewControllerAnimated:animated];
 }
 
 #pragma mark - UINavigationControllerDelegate
@@ -198,27 +215,3 @@ static inline UIViewController *GKUnWrapViewController(UIViewController *viewCon
 }
 
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

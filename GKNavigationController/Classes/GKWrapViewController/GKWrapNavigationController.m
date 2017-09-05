@@ -60,6 +60,7 @@
 }
 
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated {
+    
     if (self.navigationController.viewControllers.count > 1) {
         return [self.navigationController popViewControllerAnimated:animated];
     }else {

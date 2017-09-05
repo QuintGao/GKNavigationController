@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "GKNavigationController.h"
 #import "GKMainViewController.h"
+#import "AViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +24,9 @@
     
     self.window.backgroundColor = [UIColor whiteColor];
     
-    GKNavigationController *navVC = [[GKNavigationController alloc] initWithRootViewController:[GKMainViewController new]];
+//    GKNavigationController *navVC = [[GKNavigationController alloc] initWithRootViewController:[GKMainViewController new]];
+    
+    GKNavigationController *navVC = [[GKNavigationController alloc] initWithRootViewController:[AViewController new]];
     
     self.window.rootViewController = navVC;
     
