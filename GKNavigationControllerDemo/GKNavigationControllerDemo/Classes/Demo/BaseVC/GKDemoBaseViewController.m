@@ -37,7 +37,7 @@
     if ([self.navigationController.navigationController isKindOfClass:[GKNavigationController class]]) {
         GKNavigationController *nav = (GKNavigationController *)self.navigationController.navigationController;
         
-        NSLog(@"%@", nav.gk_viewControllers);
+//        NSLog(@"%@", nav.gk_viewControllers);
     }
 }
 

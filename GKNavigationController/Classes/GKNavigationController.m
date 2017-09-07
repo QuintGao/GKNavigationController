@@ -26,7 +26,7 @@ static inline UIViewController *GKUnWrapViewController(UIViewController *viewCon
 
 @property (nonatomic, strong) UIPanGestureRecognizer *panGesture;
 
-@property (nonatomic, strong) id popGestureTarget;
+@property (nonatomic, weak) id popGestureTarget;
 
 @property (nonatomic, strong) GKFullScreenPanGestureRecognizerDelegate *panGestureDelegate;
 

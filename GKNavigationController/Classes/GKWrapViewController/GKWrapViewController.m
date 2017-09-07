@@ -13,9 +13,9 @@ static NSValue *gk_wrapTabBarRectValue;
 
 @interface GKWrapViewController ()
 
-@property (nonatomic, strong) __kindof UIViewController *contentViewController;
+@property (nonatomic, weak) __kindof UIViewController *contentViewController;
 
-@property (nonatomic, strong) GKWrapNavigationController *wrapNavigationController;
+@property (nonatomic, weak) GKWrapNavigationController *wrapNavigationController;
 
 @end
 
@@ -58,8 +58,6 @@ static NSValue *gk_wrapTabBarRectValue;
 }
 
 - (void)didMoveToParentViewController:(UIViewController *)parent {
-    NSLog(@"%@", parent);
-    
     if (parent == nil) {
         
         [self.wrapNavigationController removeFromParentViewController];

@@ -37,10 +37,17 @@
     self.title = @"B";
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    
+}
+
 - (void)btnAction {
     CViewController *cvc = [CViewController new];
     
     [self.navigationController pushViewController:cvc animated:YES];
 }
+
 
 @end

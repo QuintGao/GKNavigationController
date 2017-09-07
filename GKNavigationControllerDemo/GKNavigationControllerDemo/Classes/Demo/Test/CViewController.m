@@ -53,4 +53,8 @@
     [self.navigationController pushViewController:bvc animated:YES];
 }
 
+- (void)dealloc {
+    NSLog(@"CViewController dealloc");
+}
+
 @end

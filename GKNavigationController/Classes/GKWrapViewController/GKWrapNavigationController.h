@@ -14,7 +14,7 @@
 /**
  用于包装导航控制器的控制器
  */
-@property (nonatomic, strong) UIViewController *gk_wrapViewContorller;
+@property (nonatomic, weak) UIViewController *gk_wrapViewContorller;
 
 + (instancetype)wrapNavigationControllerWithViewController:(UIViewController *)viewController;
 

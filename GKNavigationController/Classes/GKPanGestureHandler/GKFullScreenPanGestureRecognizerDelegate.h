@@ -20,6 +20,6 @@
 /**
  系统返回手势的target
  */
-@property (nonatomic, strong) id popGestureTarget;
+@property (nonatomic, weak) id popGestureTarget;
 
 @end
