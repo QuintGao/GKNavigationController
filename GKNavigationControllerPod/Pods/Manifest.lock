@@ -1,0 +1,12 @@
+PODS:
+  - GKNavigationController (1.0.1)
+
+DEPENDENCIES:
+  - GKNavigationController
+
+SPEC CHECKSUMS:
+  GKNavigationController: fbc0bfb5b7642f51ec488b1855e335b7577e79f8
+
+PODFILE CHECKSUM: 3aa2f03ae1f4d431cd0bfb100b312a5c75c04b5c
+
+COCOAPODS: 1.3.1

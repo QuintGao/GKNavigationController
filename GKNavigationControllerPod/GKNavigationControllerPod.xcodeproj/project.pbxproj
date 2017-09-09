@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34041B9E1D42D9F3CCD1EEF2 /* Pods_GKNavigationControllerPod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71BDC3C95897609754FEB93 /* Pods_GKNavigationControllerPod.framework */; };
+		799FF38F1F63985F004F132B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 799FF38E1F63985F004F132B /* main.m */; };
+		799FF3921F63985F004F132B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 799FF3911F63985F004F132B /* AppDelegate.m */; };
+		799FF3951F63985F004F132B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 799FF3941F63985F004F132B /* ViewController.m */; };
+		799FF3981F63985F004F132B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799FF3961F63985F004F132B /* Main.storyboard */; };
+		799FF39A1F63985F004F132B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799FF3991F63985F004F132B /* Assets.xcassets */; };
+		799FF39D1F63985F004F132B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799FF39B1F63985F004F132B /* LaunchScreen.storyboard */; };
+		799FF3A81F63985F004F132B /* GKNavigationControllerPodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 799FF3A71F63985F004F132B /* GKNavigationControllerPodTests.m */; };
+		799FF3B31F63985F004F132B /* GKNavigationControllerPodUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 799FF3B21F63985F004F132B /* GKNavigationControllerPodUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		799FF3A41F63985F004F132B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 799FF3821F63985F004F132B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 799FF3891F63985F004F132B;
+			remoteInfo = GKNavigationControllerPod;
+		};
+		799FF3AF1F63985F004F132B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 799FF3821F63985F004F132B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 799FF3891F63985F004F132B;
+			remoteInfo = GKNavigationControllerPod;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18C0DAC85BF701303501C1FB /* Pods-GKNavigationControllerPod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKNavigationControllerPod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GKNavigationControllerPod/Pods-GKNavigationControllerPod.debug.xcconfig"; sourceTree = "<group>"; };
+		78C1E5EDF87D960843206FA1 /* Pods-GKNavigationControllerPod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKNavigationControllerPod.release.xcconfig"; path = "Pods/Target Support Files/Pods-GKNavigationControllerPod/Pods-GKNavigationControllerPod.release.xcconfig"; sourceTree = "<group>"; };
+		799FF38A1F63985F004F132B /* GKNavigationControllerPod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKNavigationControllerPod.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		799FF38E1F63985F004F132B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		799FF3901F63985F004F132B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		799FF3911F63985F004F132B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		799FF3931F63985F004F132B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		799FF3941F63985F004F132B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		799FF3971F63985F004F132B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		799FF3991F63985F004F132B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		799FF39C1F63985F004F132B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		799FF39E1F63985F004F132B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		799FF3A31F63985F004F132B /* GKNavigationControllerPodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GKNavigationControllerPodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		799FF3A71F63985F004F132B /* GKNavigationControllerPodTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKNavigationControllerPodTests.m; sourceTree = "<group>"; };
+		799FF3A91F63985F004F132B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		799FF3AE1F63985F004F132B /* GKNavigationControllerPodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GKNavigationControllerPodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		799FF3B21F63985F004F132B /* GKNavigationControllerPodUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKNavigationControllerPodUITests.m; sourceTree = "<group>"; };
+		799FF3B41F63985F004F132B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A71BDC3C95897609754FEB93 /* Pods_GKNavigationControllerPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKNavigationControllerPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		799FF3871F63985F004F132B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34041B9E1D42D9F3CCD1EEF2 /* Pods_GKNavigationControllerPod.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		799FF3A01F63985F004F132B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		799FF3AB1F63985F004F132B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16F56D2EDE93701A527E2911 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A71BDC3C95897609754FEB93 /* Pods_GKNavigationControllerPod.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		799FF3811F63985F004F132B = {
+			isa = PBXGroup;
+			children = (
+				799FF38C1F63985F004F132B /* GKNavigationControllerPod */,
+				799FF3A61F63985F004F132B /* GKNavigationControllerPodTests */,
+				799FF3B11F63985F004F132B /* GKNavigationControllerPodUITests */,
+				799FF38B1F63985F004F132B /* Products */,
+				C1B7AB66A4ED7BE4D86B94DA /* Pods */,
+				16F56D2EDE93701A527E2911 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		799FF38B1F63985F004F132B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				799FF38A1F63985F004F132B /* GKNavigationControllerPod.app */,
+				799FF3A31F63985F004F132B /* GKNavigationControllerPodTests.xctest */,
+				799FF3AE1F63985F004F132B /* GKNavigationControllerPodUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		799FF38C1F63985F004F132B /* GKNavigationControllerPod */ = {
+			isa = PBXGroup;
+			children = (
+				799FF3901F63985F004F132B /* AppDelegate.h */,
+				799FF3911F63985F004F132B /* AppDelegate.m */,
+				799FF3931F63985F004F132B /* ViewController.h */,
+				799FF3941F63985F004F132B /* ViewController.m */,
+				799FF3961F63985F004F132B /* Main.storyboard */,
+				799FF3991F63985F004F132B /* Assets.xcassets */,
+				799FF39B1F63985F004F132B /* LaunchScreen.storyboard */,
+				799FF39E1F63985F004F132B /* Info.plist */,
+				799FF38D1F63985F004F132B /* Supporting Files */,
+			);
+			path = GKNavigationControllerPod;
+			sourceTree = "<group>";
+		};
+		799FF38D1F63985F004F132B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				799FF38E1F63985F004F132B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		799FF3A61F63985F004F132B /* GKNavigationControllerPodTests */ = {
+			isa = PBXGroup;
+			children = (
+				799FF3A71F63985F004F132B /* GKNavigationControllerPodTests.m */,
+				799FF3A91F63985F004F132B /* Info.plist */,
+			);
+			path = GKNavigationControllerPodTests;
+			sourceTree = "<group>";
+		};
+		799FF3B11F63985F004F132B /* GKNavigationControllerPodUITests */ = {
+			isa = PBXGroup;
+			children = (
+				799FF3B21F63985F004F132B /* GKNavigationControllerPodUITests.m */,
+				799FF3B41F63985F004F132B /* Info.plist */,
+			);
+			path = GKNavigationControllerPodUITests;
+			sourceTree = "<group>";
+		};
+		C1B7AB66A4ED7BE4D86B94DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18C0DAC85BF701303501C1FB /* Pods-GKNavigationControllerPod.debug.xcconfig */,
+				78C1E5EDF87D960843206FA1 /* Pods-GKNavigationControllerPod.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		799FF3891F63985F004F132B /* GKNavigationControllerPod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 799FF3B71F63985F004F132B /* Build configuration list for PBXNativeTarget "GKNavigationControllerPod" */;
+			buildPhases = (
+				3383C98AA410F6D780B9B2FD /* [CP] Check Pods Manifest.lock */,
+				799FF3861F63985F004F132B /* Sources */,
+				799FF3871F63985F004F132B /* Frameworks */,
+				799FF3881F63985F004F132B /* Resources */,
+				3470F5F6A4AA081E7962CC42 /* [CP] Embed Pods Frameworks */,
+				CE0DE14E1A80031434CABD3B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GKNavigationControllerPod;
+			productName = GKNavigationControllerPod;
+			productReference = 799FF38A1F63985F004F132B /* GKNavigationControllerPod.app */;
+			productType = "com.apple.product-type.application";
+		};
+		799FF3A21F63985F004F132B /* GKNavigationControllerPodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 799FF3BA1F63985F004F132B /* Build configuration list for PBXNativeTarget "GKNavigationControllerPodTests" */;
+			buildPhases = (
+				799FF39F1F63985F004F132B /* Sources */,
+				799FF3A01F63985F004F132B /* Frameworks */,
+				799FF3A11F63985F004F132B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				799FF3A51F63985F004F132B /* PBXTargetDependency */,
+			);
+			name = GKNavigationControllerPodTests;
+			productName = GKNavigationControllerPodTests;
+			productReference = 799FF3A31F63985F004F132B /* GKNavigationControllerPodTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		799FF3AD1F63985F004F132B /* GKNavigationControllerPodUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 799FF3BD1F63985F004F132B /* Build configuration list for PBXNativeTarget "GKNavigationControllerPodUITests" */;
+			buildPhases = (
+				799FF3AA1F63985F004F132B /* Sources */,
+				799FF3AB1F63985F004F132B /* Frameworks */,
+				799FF3AC1F63985F004F132B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				799FF3B01F63985F004F132B /* PBXTargetDependency */,
+			);
+			name = GKNavigationControllerPodUITests;
+			productName = GKNavigationControllerPodUITests;
+			productReference = 799FF3AE1F63985F004F132B /* GKNavigationControllerPodUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		799FF3821F63985F004F132B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "高坤";
+				TargetAttributes = {
+					799FF3891F63985F004F132B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 85SKD6C7ZZ;
+						ProvisioningStyle = Automatic;
+					};
+					799FF3A21F63985F004F132B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 85SKD6C7ZZ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 799FF3891F63985F004F132B;
+					};
+					799FF3AD1F63985F004F132B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 85SKD6C7ZZ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 799FF3891F63985F004F132B;
+					};
+				};
+			};
+			buildConfigurationList = 799FF3851F63985F004F132B /* Build configuration list for PBXProject "GKNavigationControllerPod" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 799FF3811F63985F004F132B;
+			productRefGroup = 799FF38B1F63985F004F132B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				799FF3891F63985F004F132B /* GKNavigationControllerPod */,
+				799FF3A21F63985F004F132B /* GKNavigationControllerPodTests */,
+				799FF3AD1F63985F004F132B /* GKNavigationControllerPodUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		799FF3881F63985F004F132B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				799FF39D1F63985F004F132B /* LaunchScreen.storyboard in Resources */,
+				799FF39A1F63985F004F132B /* Assets.xcassets in Resources */,
+				799FF3981F63985F004F132B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		799FF3A11F63985F004F132B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		799FF3AC1F63985F004F132B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3383C98AA410F6D780B9B2FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GKNavigationControllerPod-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3470F5F6A4AA081E7962CC42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GKNavigationControllerPod/Pods-GKNavigationControllerPod-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GKNavigationController/GKNavigationController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GKNavigationController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GKNavigationControllerPod/Pods-GKNavigationControllerPod-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE0DE14E1A80031434CABD3B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GKNavigationControllerPod/Pods-GKNavigationControllerPod-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		799FF3861F63985F004F132B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				799FF3951F63985F004F132B /* ViewController.m in Sources */,
+				799FF3921F63985F004F132B /* AppDelegate.m in Sources */,
+				799FF38F1F63985F004F132B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		799FF39F1F63985F004F132B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				799FF3A81F63985F004F132B /* GKNavigationControllerPodTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		799FF3AA1F63985F004F132B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				799FF3B31F63985F004F132B /* GKNavigationControllerPodUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		799FF3A51F63985F004F132B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 799FF3891F63985F004F132B /* GKNavigationControllerPod */;
+			targetProxy = 799FF3A41F63985F004F132B /* PBXContainerItemProxy */;
+		};
+		799FF3B01F63985F004F132B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 799FF3891F63985F004F132B /* GKNavigationControllerPod */;
+			targetProxy = 799FF3AF1F63985F004F132B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		799FF3961F63985F004F132B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				799FF3971F63985F004F132B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		799FF39B1F63985F004F132B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				799FF39C1F63985F004F132B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		799FF3B51F63985F004F132B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		799FF3B61F63985F004F132B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		799FF3B81F63985F004F132B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18C0DAC85BF701303501C1FB /* Pods-GKNavigationControllerPod.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 85SKD6C7ZZ;
+				INFOPLIST_FILE = GKNavigationControllerPod/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maserati.swift.GKNavigationControllerPod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		799FF3B91F63985F004F132B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78C1E5EDF87D960843206FA1 /* Pods-GKNavigationControllerPod.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 85SKD6C7ZZ;
+				INFOPLIST_FILE = GKNavigationControllerPod/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maserati.swift.GKNavigationControllerPod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		799FF3BB1F63985F004F132B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 85SKD6C7ZZ;
+				INFOPLIST_FILE = GKNavigationControllerPodTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maserati.swift.GKNavigationControllerPodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GKNavigationControllerPod.app/GKNavigationControllerPod";
+			};
+			name = Debug;
+		};
+		799FF3BC1F63985F004F132B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 85SKD6C7ZZ;
+				INFOPLIST_FILE = GKNavigationControllerPodTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maserati.swift.GKNavigationControllerPodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GKNavigationControllerPod.app/GKNavigationControllerPod";
+			};
+			name = Release;
+		};
+		799FF3BE1F63985F004F132B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 85SKD6C7ZZ;
+				INFOPLIST_FILE = GKNavigationControllerPodUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maserati.swift.GKNavigationControllerPodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GKNavigationControllerPod;
+			};
+			name = Debug;
+		};
+		799FF3BF1F63985F004F132B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 85SKD6C7ZZ;
+				INFOPLIST_FILE = GKNavigationControllerPodUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maserati.swift.GKNavigationControllerPodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GKNavigationControllerPod;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		799FF3851F63985F004F132B /* Build configuration list for PBXProject "GKNavigationControllerPod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				799FF3B51F63985F004F132B /* Debug */,
+				799FF3B61F63985F004F132B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		799FF3B71F63985F004F132B /* Build configuration list for PBXNativeTarget "GKNavigationControllerPod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				799FF3B81F63985F004F132B /* Debug */,
+				799FF3B91F63985F004F132B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		799FF3BA1F63985F004F132B /* Build configuration list for PBXNativeTarget "GKNavigationControllerPodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				799FF3BB1F63985F004F132B /* Debug */,
+				799FF3BC1F63985F004F132B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		799FF3BD1F63985F004F132B /* Build configuration list for PBXNativeTarget "GKNavigationControllerPodUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				799FF3BE1F63985F004F132B /* Debug */,
+				799FF3BF1F63985F004F132B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 799FF3821F63985F004F132B /* Project object */;
+}

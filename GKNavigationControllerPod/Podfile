@@ -1,0 +1,8 @@
+platform :ios, '9.0'
+
+target 'GKNavigationControllerPod' do
+  use_frameworks!
+  
+  pod 'GKNavigationController'
+
+end

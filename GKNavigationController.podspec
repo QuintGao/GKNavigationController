@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/QuintGao/GKNavigationController.git", :tag => s.version.to_s }
   s.source_files  = "GKNavigationController/**/*.{h,m}"
   s.public_header_files = "GKNavigationController/**/*.h"
-  s.resource  = "GKNavigationController/Resources"
+  s.resource  = "GKNavigationController/Resource"
   s.frameworks = "Foundation", "UIKit"
 end

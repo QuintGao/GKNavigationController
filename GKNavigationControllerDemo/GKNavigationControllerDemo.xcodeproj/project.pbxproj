@@ -32,14 +32,14 @@
 		792647F51EFF735B001C12DA /* GKTab001ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647F41EFF735B001C12DA /* GKTab001ViewController.m */; };
 		792647F81EFF7365001C12DA /* GKTab002ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647F71EFF7365001C12DA /* GKTab002ViewController.m */; };
 		792647FB1EFF736D001C12DA /* GKTab003ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792647FA1EFF736D001C12DA /* GKTab003ViewController.m */; };
-		792649911F0E585F001C12DA /* btn_back_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7926498F1F0E585F001C12DA /* btn_back_white@2x.png */; };
-		792649921F0E585F001C12DA /* btn_back_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 792649901F0E585F001C12DA /* btn_back_white@3x.png */; };
 		7926499A1F0E5884001C12DA /* UIImage+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 792649951F0E5884001C12DA /* UIImage+GKCategory.m */; };
 		7926499B1F0E5884001C12DA /* UIScrollView+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 792649971F0E5884001C12DA /* UIScrollView+GKCategory.m */; };
 		7926499C1F0E5884001C12DA /* UIViewController+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 792649991F0E5884001C12DA /* UIViewController+GKCategory.m */; };
 		794B86091F5E94C500F150DC /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 794B86081F5E94C500F150DC /* AViewController.m */; };
 		794B860C1F5E94CC00F150DC /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 794B860B1F5E94CC00F150DC /* BViewController.m */; };
 		794B860F1F5E94D400F150DC /* CViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 794B860E1F5E94D400F150DC /* CViewController.m */; };
+		799FF3C31F639999004F132B /* btn_back_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 799FF3C11F639999004F132B /* btn_back_white@2x.png */; };
+		799FF3C41F639999004F132B /* btn_back_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 799FF3C21F639999004F132B /* btn_back_white@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,8 +111,6 @@
 		792647F71EFF7365001C12DA /* GKTab002ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKTab002ViewController.m; sourceTree = "<group>"; };
 		792647F91EFF736D001C12DA /* GKTab003ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKTab003ViewController.h; sourceTree = "<group>"; };
 		792647FA1EFF736D001C12DA /* GKTab003ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKTab003ViewController.m; sourceTree = "<group>"; };
-		7926498F1F0E585F001C12DA /* btn_back_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_back_white@2x.png"; sourceTree = "<group>"; };
-		792649901F0E585F001C12DA /* btn_back_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_back_white@3x.png"; sourceTree = "<group>"; };
 		792649941F0E5884001C12DA /* UIImage+GKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GKCategory.h"; sourceTree = "<group>"; };
 		792649951F0E5884001C12DA /* UIImage+GKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GKCategory.m"; sourceTree = "<group>"; };
 		792649961F0E5884001C12DA /* UIScrollView+GKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+GKCategory.h"; sourceTree = "<group>"; };
@@ -125,6 +123,8 @@
 		794B860B1F5E94CC00F150DC /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
 		794B860D1F5E94D400F150DC /* CViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CViewController.h; sourceTree = "<group>"; };
 		794B860E1F5E94D400F150DC /* CViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CViewController.m; sourceTree = "<group>"; };
+		799FF3C11F639999004F132B /* btn_back_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_back_white@2x.png"; sourceTree = "<group>"; };
+		799FF3C21F639999004F132B /* btn_back_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_back_white@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,7 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				792647771EFBFD8A001C12DA /* Classes */,
-				7926498E1F0E585F001C12DA /* Resources */,
+				799FF3C01F639999004F132B /* Resource */,
 			);
 			name = GKNavigationController;
 			path = ../../GKNavigationController;
@@ -333,15 +333,6 @@
 			path = TabVC;
 			sourceTree = "<group>";
 		};
-		7926498E1F0E585F001C12DA /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				7926498F1F0E585F001C12DA /* btn_back_white@2x.png */,
-				792649901F0E585F001C12DA /* btn_back_white@3x.png */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		792649931F0E5884001C12DA /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +357,15 @@
 				794B860E1F5E94D400F150DC /* CViewController.m */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		799FF3C01F639999004F132B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				799FF3C11F639999004F132B /* btn_back_white@2x.png */,
+				799FF3C21F639999004F132B /* btn_back_white@3x.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,9 +478,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7926474A1EFBFD6B001C12DA /* LaunchScreen.storyboard in Resources */,
-				792649911F0E585F001C12DA /* btn_back_white@2x.png in Resources */,
+				799FF3C41F639999004F132B /* btn_back_white@3x.png in Resources */,
 				792647471EFBFD6B001C12DA /* Assets.xcassets in Resources */,
-				792649921F0E585F001C12DA /* btn_back_white@3x.png in Resources */,
+				799FF3C31F639999004F132B /* btn_back_white@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

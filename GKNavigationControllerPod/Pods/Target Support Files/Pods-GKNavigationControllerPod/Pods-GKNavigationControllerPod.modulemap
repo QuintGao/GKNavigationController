@@ -1,0 +1,6 @@
+framework module Pods_GKNavigationControllerPod {
+  umbrella header "Pods-GKNavigationControllerPod-umbrella.h"
+
+  export *
+  module * { export * }
+}
