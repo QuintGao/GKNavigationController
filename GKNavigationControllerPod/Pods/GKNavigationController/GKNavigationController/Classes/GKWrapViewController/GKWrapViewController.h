@@ -16,7 +16,7 @@
 /**
  这里用来记录包装前的控制器
  */
-@property (nonatomic, strong, readonly) __kindof UIViewController *contentViewController;
+@property (nonatomic, weak, readonly) __kindof UIViewController *contentViewController;
 
 /**
  包装控制器的方法

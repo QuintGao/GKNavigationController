@@ -13,9 +13,9 @@ static NSValue *gk_wrapTabBarRectValue;
 
 @interface GKWrapViewController ()
 
-@property (nonatomic, strong) __kindof UIViewController *contentViewController;
+@property (nonatomic, weak) __kindof UIViewController *contentViewController;
 
-@property (nonatomic, strong) GKWrapNavigationController *wrapNavigationController;
+@property (nonatomic, weak) GKWrapNavigationController *wrapNavigationController;
 
 @end
 
@@ -50,6 +50,19 @@ static NSValue *gk_wrapTabBarRectValue;
     [self.view addSubview:self.wrapNavigationController.view];
     self.wrapNavigationController.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.wrapNavigationController.view.frame = self.view.bounds;
+}
+
+- (void)dealloc {
+    [self.wrapNavigationController removeFromParentViewController];
+    self.wrapNavigationController = nil;
+}
+
+- (void)didMoveToParentViewController:(UIViewController *)parent {
+    if (parent == nil) {
+        
+        [self.wrapNavigationController removeFromParentViewController];
+        self.wrapNavigationController = nil;
+    }
 }
 
 - (void)viewDidLayoutSubviews {

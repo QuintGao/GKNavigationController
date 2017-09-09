@@ -15,11 +15,11 @@
 /**
  控制器对应的包装后的控制器
  */
-@property (nonatomic, strong) GKWrapViewController *gk_wrapViewController;
+@property (nonatomic, weak) GKWrapViewController *gk_wrapViewController;
 
 /**
  控制器的根控制器
  */
-@property (nonatomic, strong, readonly) GKNavigationController *gk_navigationController;
+@property (nonatomic, weak, readonly) GKNavigationController *gk_navigationController;
 
 @end
