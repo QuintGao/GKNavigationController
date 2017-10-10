@@ -35,6 +35,15 @@
     [self.view addSubview:btn];
     
     self.title = @"B";
+    
+    
+    for (NSInteger i = 0; i < 5; i++) {
+        UIViewController *vc = [UIViewController new];
+        vc.view.frame = CGRectMake(100, 100, 100, 100);
+        vc.view.backgroundColor = [UIColor redColor];
+        [self addChildViewController:vc];
+        [self.view addSubview:vc.view];
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {

@@ -12,12 +12,6 @@
 @implementation GKFullScreenPanGestureRecognizerDelegate
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
-    
-    // 如果当前只有一个控制器
-    if (self.navigationController.viewControllers.count <= 1) {
-        return NO;
-    }
-    
     // 获取当前控制器的导航栏的最顶层控制器的内容控制器
     UIViewController *topContentViewController = self.navigationController.gk_topViewController;
 //    NSLog(@"%@-----%d", topContentViewController, topContentViewController.gk_interactivePopDisabled);

@@ -88,10 +88,6 @@ static inline UIViewController *GKUnWrapViewController(UIViewController *viewCon
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(viewControllerPropertyChanged:) name:GKViewControllerPropertyChangedNotification object:nil];
 }
 
-- (void)dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:GKViewControllerPropertyChangedNotification object:nil];
-}
-
 - (UIViewController *)gk_visibleViewController {
     return GKUnWrapViewController([super visibleViewController]);
 }
@@ -192,8 +188,6 @@ static inline UIViewController *GKUnWrapViewController(UIViewController *viewCon
 - (void)handlePopGestureRecognizer:(UIViewController *)viewController {
     BOOL isRootVC = (viewController == self.viewControllers.firstObject);
     viewController = GKUnWrapViewController(viewController);
-    
-    if (isRootVC) return;
     
     // 移除全屏滑动手势，重新处理手势
     if ([self.interactivePopGestureRecognizer.view.gestureRecognizers containsObject:self.panGesture]) {

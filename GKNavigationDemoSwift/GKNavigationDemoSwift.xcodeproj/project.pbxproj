@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		105AAE87E6FE983C606F245E /* Pods_GKNavigationDemoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A13A9FE1C3B3F8E2FC4A4A /* Pods_GKNavigationDemoSwift.framework */; };
+		79A449541F6F5C49002FDF03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A449531F6F5C49002FDF03 /* AppDelegate.swift */; };
+		79A449561F6F5C49002FDF03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A449551F6F5C49002FDF03 /* ViewController.swift */; };
+		79A449591F6F5C49002FDF03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A449571F6F5C49002FDF03 /* Main.storyboard */; };
+		79A4495B1F6F5C49002FDF03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79A4495A1F6F5C49002FDF03 /* Assets.xcassets */; };
+		79A4495E1F6F5C49002FDF03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A4495C1F6F5C49002FDF03 /* LaunchScreen.storyboard */; };
+		79A449691F6F5C49002FDF03 /* GKNavigationDemoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A449681F6F5C49002FDF03 /* GKNavigationDemoSwiftTests.swift */; };
+		79A449741F6F5C49002FDF03 /* GKNavigationDemoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A449731F6F5C49002FDF03 /* GKNavigationDemoSwiftUITests.swift */; };
+		79A449821F6F5CD1002FDF03 /* GKCommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A449811F6F5CD1002FDF03 /* GKCommonViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79A449651F6F5C49002FDF03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79A449481F6F5C49002FDF03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79A4494F1F6F5C49002FDF03;
+			remoteInfo = GKNavigationDemoSwift;
+		};
+		79A449701F6F5C49002FDF03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79A449481F6F5C49002FDF03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79A4494F1F6F5C49002FDF03;
+			remoteInfo = GKNavigationDemoSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		399D98448C7B37509BAA2FDC /* Pods-GKNavigationDemoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKNavigationDemoSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GKNavigationDemoSwift/Pods-GKNavigationDemoSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		79A449501F6F5C49002FDF03 /* GKNavigationDemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKNavigationDemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79A449531F6F5C49002FDF03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79A449551F6F5C49002FDF03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79A449581F6F5C49002FDF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79A4495A1F6F5C49002FDF03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79A4495D1F6F5C49002FDF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79A4495F1F6F5C49002FDF03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79A449641F6F5C49002FDF03 /* GKNavigationDemoSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GKNavigationDemoSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79A449681F6F5C49002FDF03 /* GKNavigationDemoSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKNavigationDemoSwiftTests.swift; sourceTree = "<group>"; };
+		79A4496A1F6F5C49002FDF03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79A4496F1F6F5C49002FDF03 /* GKNavigationDemoSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GKNavigationDemoSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79A449731F6F5C49002FDF03 /* GKNavigationDemoSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKNavigationDemoSwiftUITests.swift; sourceTree = "<group>"; };
+		79A449751F6F5C49002FDF03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79A449811F6F5CD1002FDF03 /* GKCommonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKCommonViewController.swift; sourceTree = "<group>"; };
+		97A13A9FE1C3B3F8E2FC4A4A /* Pods_GKNavigationDemoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKNavigationDemoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD9BE9FD8DA7D1AEF36D57A8 /* Pods-GKNavigationDemoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKNavigationDemoSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-GKNavigationDemoSwift/Pods-GKNavigationDemoSwift.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79A4494D1F6F5C49002FDF03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				105AAE87E6FE983C606F245E /* Pods_GKNavigationDemoSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79A449611F6F5C49002FDF03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79A4496C1F6F5C49002FDF03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79A449471F6F5C49002FDF03 = {
+			isa = PBXGroup;
+			children = (
+				79A449521F6F5C49002FDF03 /* GKNavigationDemoSwift */,
+				79A449671F6F5C49002FDF03 /* GKNavigationDemoSwiftTests */,
+				79A449721F6F5C49002FDF03 /* GKNavigationDemoSwiftUITests */,
+				79A449511F6F5C49002FDF03 /* Products */,
+				9055CED29E70D3F5ED68B51A /* Pods */,
+				A86E2FBA0C0934501996EF59 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		79A449511F6F5C49002FDF03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79A449501F6F5C49002FDF03 /* GKNavigationDemoSwift.app */,
+				79A449641F6F5C49002FDF03 /* GKNavigationDemoSwiftTests.xctest */,
+				79A4496F1F6F5C49002FDF03 /* GKNavigationDemoSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79A449521F6F5C49002FDF03 /* GKNavigationDemoSwift */ = {
+			isa = PBXGroup;
+			children = (
+				79A449531F6F5C49002FDF03 /* AppDelegate.swift */,
+				79A449551F6F5C49002FDF03 /* ViewController.swift */,
+				79A449811F6F5CD1002FDF03 /* GKCommonViewController.swift */,
+				79A449571F6F5C49002FDF03 /* Main.storyboard */,
+				79A4495A1F6F5C49002FDF03 /* Assets.xcassets */,
+				79A4495C1F6F5C49002FDF03 /* LaunchScreen.storyboard */,
+				79A4495F1F6F5C49002FDF03 /* Info.plist */,
+			);
+			path = GKNavigationDemoSwift;
+			sourceTree = "<group>";
+		};
+		79A449671F6F5C49002FDF03 /* GKNavigationDemoSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				79A449681F6F5C49002FDF03 /* GKNavigationDemoSwiftTests.swift */,
+				79A4496A1F6F5C49002FDF03 /* Info.plist */,
+			);
+			path = GKNavigationDemoSwiftTests;
+			sourceTree = "<group>";
+		};
+		79A449721F6F5C49002FDF03 /* GKNavigationDemoSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79A449731F6F5C49002FDF03 /* GKNavigationDemoSwiftUITests.swift */,
+				79A449751F6F5C49002FDF03 /* Info.plist */,
+			);
+			path = GKNavigationDemoSwiftUITests;
+			sourceTree = "<group>";
+		};
+		9055CED29E70D3F5ED68B51A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				399D98448C7B37509BAA2FDC /* Pods-GKNavigationDemoSwift.debug.xcconfig */,
+				CD9BE9FD8DA7D1AEF36D57A8 /* Pods-GKNavigationDemoSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A86E2FBA0C0934501996EF59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97A13A9FE1C3B3F8E2FC4A4A /* Pods_GKNavigationDemoSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79A4494F1F6F5C49002FDF03 /* GKNavigationDemoSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79A449781F6F5C49002FDF03 /* Build configuration list for PBXNativeTarget "GKNavigationDemoSwift" */;
+			buildPhases = (
+				919B3373AA1A0E4694DC8E9A /* [CP] Check Pods Manifest.lock */,
+				79A4494C1F6F5C49002FDF03 /* Sources */,
+				79A4494D1F6F5C49002FDF03 /* Frameworks */,
+				79A4494E1F6F5C49002FDF03 /* Resources */,
+				2E4B7A8F654975DF7A907434 /* [CP] Embed Pods Frameworks */,
+				B5D04CDA8770739CEDF375D6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GKNavigationDemoSwift;
+			productName = GKNavigationDemoSwift;
+			productReference = 79A449501F6F5C49002FDF03 /* GKNavigationDemoSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79A449631F6F5C49002FDF03 /* GKNavigationDemoSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79A4497B1F6F5C49002FDF03 /* Build configuration list for PBXNativeTarget "GKNavigationDemoSwiftTests" */;
+			buildPhases = (
+				79A449601F6F5C49002FDF03 /* Sources */,
+				79A449611F6F5C49002FDF03 /* Frameworks */,
+				79A449621F6F5C49002FDF03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79A449661F6F5C49002FDF03 /* PBXTargetDependency */,
+			);
+			name = GKNavigationDemoSwiftTests;
+			productName = GKNavigationDemoSwiftTests;
+			productReference = 79A449641F6F5C49002FDF03 /* GKNavigationDemoSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		79A4496E1F6F5C49002FDF03 /* GKNavigationDemoSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79A4497E1F6F5C49002FDF03 /* Build configuration list for PBXNativeTarget "GKNavigationDemoSwiftUITests" */;
+			buildPhases = (
+				79A4496B1F6F5C49002FDF03 /* Sources */,
+				79A4496C1F6F5C49002FDF03 /* Frameworks */,
+				79A4496D1F6F5C49002FDF03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79A449711F6F5C49002FDF03 /* PBXTargetDependency */,
+			);
+			name = GKNavigationDemoSwiftUITests;
+			productName = GKNavigationDemoSwiftUITests;
+			productReference = 79A4496F1F6F5C49002FDF03 /* GKNavigationDemoSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79A449481F6F5C49002FDF03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "高坤";
+				TargetAttributes = {
+					79A4494F1F6F5C49002FDF03 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 85SKD6C7ZZ;
+						ProvisioningStyle = Automatic;
+					};
+					79A449631F6F5C49002FDF03 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 85SKD6C7ZZ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 79A4494F1F6F5C49002FDF03;
+					};
+					79A4496E1F6F5C49002FDF03 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 85SKD6C7ZZ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 79A4494F1F6F5C49002FDF03;
+					};
+				};
+			};
+			buildConfigurationList = 79A4494B1F6F5C49002FDF03 /* Build configuration list for PBXProject "GKNavigationDemoSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79A449471F6F5C49002FDF03;
+			productRefGroup = 79A449511F6F5C49002FDF03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79A4494F1F6F5C49002FDF03 /* GKNavigationDemoSwift */,
+				79A449631F6F5C49002FDF03 /* GKNavigationDemoSwiftTests */,
+				79A4496E1F6F5C49002FDF03 /* GKNavigationDemoSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79A4494E1F6F5C49002FDF03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79A4495E1F6F5C49002FDF03 /* LaunchScreen.storyboard in Resources */,
+				79A4495B1F6F5C49002FDF03 /* Assets.xcassets in Resources */,
+				79A449591F6F5C49002FDF03 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79A449621F6F5C49002FDF03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79A4496D1F6F5C49002FDF03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E4B7A8F654975DF7A907434 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GKNavigationDemoSwift/Pods-GKNavigationDemoSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GKNavigationController/GKNavigationController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GKNavigationController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GKNavigationDemoSwift/Pods-GKNavigationDemoSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		919B3373AA1A0E4694DC8E9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GKNavigationDemoSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5D04CDA8770739CEDF375D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GKNavigationDemoSwift/Pods-GKNavigationDemoSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79A4494C1F6F5C49002FDF03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79A449561F6F5C49002FDF03 /* ViewController.swift in Sources */,
+				79A449541F6F5C49002FDF03 /* AppDelegate.swift in Sources */,
+				79A449821F6F5CD1002FDF03 /* GKCommonViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79A449601F6F5C49002FDF03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79A449691F6F5C49002FDF03 /* GKNavigationDemoSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79A4496B1F6F5C49002FDF03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79A449741F6F5C49002FDF03 /* GKNavigationDemoSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79A449661F6F5C49002FDF03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79A4494F1F6F5C49002FDF03 /* GKNavigationDemoSwift */;
+			targetProxy = 79A449651F6F5C49002FDF03 /* PBXContainerItemProxy */;
+		};
+		79A449711F6F5C49002FDF03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79A4494F1F6F5C49002FDF03 /* GKNavigationDemoSwift */;
+			targetProxy = 79A449701F6F5C49002FDF03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79A449571F6F5C49002FDF03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79A449581F6F5C49002FDF03 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		79A4495C1F6F5C49002FDF03 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79A4495D1F6F5C49002FDF03 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79A449761F6F5C49002FDF03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79A449771F6F5C49002FDF03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79A449791F6F5C49002FDF03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 399D98448C7B37509BAA2FDC /* Pods-GKNavigationDemoSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 85SKD6C7ZZ;
+				INFOPLIST_FILE = GKNavigationDemoSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maserati.swift.GKNavigationDemoSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		79A4497A1F6F5C49002FDF03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD9BE9FD8DA7D1AEF36D57A8 /* Pods-GKNavigationDemoSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 85SKD6C7ZZ;
+				INFOPLIST_FILE = GKNavigationDemoSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maserati.swift.GKNavigationDemoSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		79A4497C1F6F5C49002FDF03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 85SKD6C7ZZ;
+				INFOPLIST_FILE = GKNavigationDemoSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maserati.swift.GKNavigationDemoSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GKNavigationDemoSwift.app/GKNavigationDemoSwift";
+			};
+			name = Debug;
+		};
+		79A4497D1F6F5C49002FDF03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 85SKD6C7ZZ;
+				INFOPLIST_FILE = GKNavigationDemoSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maserati.swift.GKNavigationDemoSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GKNavigationDemoSwift.app/GKNavigationDemoSwift";
+			};
+			name = Release;
+		};
+		79A4497F1F6F5C49002FDF03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 85SKD6C7ZZ;
+				INFOPLIST_FILE = GKNavigationDemoSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maserati.swift.GKNavigationDemoSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GKNavigationDemoSwift;
+			};
+			name = Debug;
+		};
+		79A449801F6F5C49002FDF03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 85SKD6C7ZZ;
+				INFOPLIST_FILE = GKNavigationDemoSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maserati.swift.GKNavigationDemoSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GKNavigationDemoSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79A4494B1F6F5C49002FDF03 /* Build configuration list for PBXProject "GKNavigationDemoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79A449761F6F5C49002FDF03 /* Debug */,
+				79A449771F6F5C49002FDF03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79A449781F6F5C49002FDF03 /* Build configuration list for PBXNativeTarget "GKNavigationDemoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79A449791F6F5C49002FDF03 /* Debug */,
+				79A4497A1F6F5C49002FDF03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79A4497B1F6F5C49002FDF03 /* Build configuration list for PBXNativeTarget "GKNavigationDemoSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79A4497C1F6F5C49002FDF03 /* Debug */,
+				79A4497D1F6F5C49002FDF03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79A4497E1F6F5C49002FDF03 /* Build configuration list for PBXNativeTarget "GKNavigationDemoSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79A4497F1F6F5C49002FDF03 /* Debug */,
+				79A449801F6F5C49002FDF03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79A449481F6F5C49002FDF03 /* Project object */;
+}

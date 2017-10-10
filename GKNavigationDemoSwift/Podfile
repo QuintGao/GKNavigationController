@@ -1,0 +1,8 @@
+platform :ios, '8.0'
+
+target 'GKNavigationDemoSwift' do
+  use_frameworks!
+
+  pod 'GKNavigationController'
+
+end

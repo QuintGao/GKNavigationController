@@ -24,9 +24,9 @@
     
     self.window.backgroundColor = [UIColor whiteColor];
     
-    GKNavigationController *navVC = [[GKNavigationController alloc] initWithRootViewController:[GKMainViewController new]];
+//    GKNavigationController *navVC = [[GKNavigationController alloc] initWithRootViewController:[GKMainViewController new]];
     
-//    GKNavigationController *navVC = [[GKNavigationController alloc] initWithRootViewController:[AViewController new]];
+    GKNavigationController *navVC = [[GKNavigationController alloc] initWithRootViewController:[AViewController new]];
     
     self.window.rootViewController = navVC;
     
