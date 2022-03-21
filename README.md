@@ -46,7 +46,7 @@
 
 2. UITabBarController作为根控制器
         UITabBarController
-            tab1
+  、、、、、、、、、、、、          tab1
                 GKNavigationController
                     - GKWrapViewController
                         - GKWrapNavigationController
